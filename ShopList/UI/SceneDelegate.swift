@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  ShopList
-//
-//  Created by Андрей Журавлев on 17.05.2022.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

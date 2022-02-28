@@ -1,0 +1,25 @@
+PODS:
+  - PhoneNumberKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.3.3)
+    - PhoneNumberKit/UIKit (= 3.3.3)
+  - PhoneNumberKit/PhoneNumberKitCore (3.3.3)
+  - PhoneNumberKit/UIKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - SwipeCellKit (2.7.1)
+
+DEPENDENCIES:
+  - PhoneNumberKit
+  - SwipeCellKit
+
+SPEC REPOS:
+  trunk:
+    - PhoneNumberKit
+    - SwipeCellKit
+
+SPEC CHECKSUMS:
+  PhoneNumberKit: 4ce83273551c4d2ae10b7361162f4283dd02835f
+  SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
+
+PODFILE CHECKSUM: bde015e0961d701d337e3931f3c61d9737c25828
+
+COCOAPODS: 1.11.2
