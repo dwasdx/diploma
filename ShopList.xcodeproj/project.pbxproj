@@ -132,6 +132,19 @@
 		75CD55C82833E10D001291EF /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55C02833E10D001291EF /* UIViewController+Alerts.swift */; };
 		75CD55C92833E10D001291EF /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55C12833E10D001291EF /* UIViewController+Toast.swift */; };
 		75CD55CA2833E10D001291EF /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55C22833E10D001291EF /* BaseRouter.swift */; };
+		75CD55CC2833E34F001291EF /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CD55CB2833E34F001291EF /* ColorAssets.xcassets */; };
+		75CD55F52833E92A001291EF /* WelcomeFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55CE2833E92A001291EF /* WelcomeFlowRouter.swift */; };
+		75CD55F62833E92A001291EF /* SignInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD55D02833E92A001291EF /* SignInViewController.storyboard */; };
+		75CD55F72833E92A001291EF /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55D12833E92A001291EF /* SignInViewModel.swift */; };
+		75CD55F82833E92A001291EF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55D22833E92A001291EF /* SignInViewController.swift */; };
+		75CD55F92833E92A001291EF /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD55D32833E92A001291EF /* WelcomeViewController.storyboard */; };
+		75CD55FA2833E92A001291EF /* ConfirmPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55D52833E92A001291EF /* ConfirmPhoneNumberViewController.swift */; };
+		75CD55FB2833E92A001291EF /* ConfirmPhoneNumberViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD55D62833E92A001291EF /* ConfirmPhoneNumberViewController.storyboard */; };
+		75CD55FC2833E92A001291EF /* ConfirmPhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55D72833E92A001291EF /* ConfirmPhoneNumberViewModel.swift */; };
+		75CD55FD2833E92A001291EF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55D82833E92A001291EF /* WelcomeViewController.swift */; };
+		75CD56012833E92A001291EF /* RegistrationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD55DE2833E92A001291EF /* RegistrationViewController.storyboard */; };
+		75CD56022833E92A001291EF /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55DF2833E92A001291EF /* RegistrationViewModel.swift */; };
+		75CD56032833E92A001291EF /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55E02833E92A001291EF /* RegistrationViewController.swift */; };
 		A2CDE33EA2ABA2EB445847BC /* Pods_ShopList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F09589BAC5043FC40F347B /* Pods_ShopList.framework */; };
 /* End PBXBuildFile section */
 
@@ -271,6 +284,19 @@
 		75CD55C02833E10D001291EF /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		75CD55C12833E10D001291EF /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		75CD55C22833E10D001291EF /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		75CD55CB2833E34F001291EF /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		75CD55CE2833E92A001291EF /* WelcomeFlowRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeFlowRouter.swift; sourceTree = "<group>"; };
+		75CD55D02833E92A001291EF /* SignInViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignInViewController.storyboard; sourceTree = "<group>"; };
+		75CD55D12833E92A001291EF /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		75CD55D22833E92A001291EF /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		75CD55D32833E92A001291EF /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
+		75CD55D52833E92A001291EF /* ConfirmPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		75CD55D62833E92A001291EF /* ConfirmPhoneNumberViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConfirmPhoneNumberViewController.storyboard; sourceTree = "<group>"; };
+		75CD55D72833E92A001291EF /* ConfirmPhoneNumberViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberViewModel.swift; sourceTree = "<group>"; };
+		75CD55D82833E92A001291EF /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		75CD55DE2833E92A001291EF /* RegistrationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationViewController.storyboard; sourceTree = "<group>"; };
+		75CD55DF2833E92A001291EF /* RegistrationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		75CD55E02833E92A001291EF /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +340,7 @@
 		75CD547C2833D8FC001291EF /* ShopList */ = {
 			isa = PBXGroup;
 			children = (
+				75CD55CB2833E34F001291EF /* ColorAssets.xcassets */,
 				75CD54892833D8FE001291EF /* Assets.xcassets */,
 				75CD548E2833D8FE001291EF /* Info.plist */,
 				75CD54942833DA01001291EF /* Common */,
@@ -688,6 +715,7 @@
 		75CD558C2833DF9B001291EF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				75CD55CD2833E92A001291EF /* WelcomeViewController */,
 				75CD557E2833DF97001291EF /* MainTabBarViewController */,
 			);
 			path = ViewControllers;
@@ -764,6 +792,49 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		75CD55CD2833E92A001291EF /* WelcomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD55CE2833E92A001291EF /* WelcomeFlowRouter.swift */,
+				75CD55D82833E92A001291EF /* WelcomeViewController.swift */,
+				75CD55D32833E92A001291EF /* WelcomeViewController.storyboard */,
+				75CD55CF2833E92A001291EF /* SignInViewController */,
+				75CD55D92833E92A001291EF /* RegistrationViewController */,
+				75CD55D42833E92A001291EF /* ConfirmPhoneNumberViewController */,
+			);
+			path = WelcomeViewController;
+			sourceTree = "<group>";
+		};
+		75CD55CF2833E92A001291EF /* SignInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD55D12833E92A001291EF /* SignInViewModel.swift */,
+				75CD55D22833E92A001291EF /* SignInViewController.swift */,
+				75CD55D02833E92A001291EF /* SignInViewController.storyboard */,
+			);
+			path = SignInViewController;
+			sourceTree = "<group>";
+		};
+		75CD55D42833E92A001291EF /* ConfirmPhoneNumberViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD55D72833E92A001291EF /* ConfirmPhoneNumberViewModel.swift */,
+				75CD55D52833E92A001291EF /* ConfirmPhoneNumberViewController.swift */,
+				75CD55D62833E92A001291EF /* ConfirmPhoneNumberViewController.storyboard */,
+			);
+			path = ConfirmPhoneNumberViewController;
+			sourceTree = "<group>";
+		};
+		75CD55D92833E92A001291EF /* RegistrationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD55DF2833E92A001291EF /* RegistrationViewModel.swift */,
+				75CD55E02833E92A001291EF /* RegistrationViewController.swift */,
+				75CD55DE2833E92A001291EF /* RegistrationViewController.storyboard */,
+			);
+			path = RegistrationViewController;
+			sourceTree = "<group>";
+		};
 		F6E942EFE83A41418858C608 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -834,8 +905,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CD548D2833D8FE001291EF /* LaunchScreen.storyboard in Resources */,
+				75CD55F62833E92A001291EF /* SignInViewController.storyboard in Resources */,
+				75CD55F92833E92A001291EF /* WelcomeViewController.storyboard in Resources */,
 				75CD548A2833D8FE001291EF /* Assets.xcassets in Resources */,
+				75CD55FB2833E92A001291EF /* ConfirmPhoneNumberViewController.storyboard in Resources */,
+				75CD55CC2833E34F001291EF /* ColorAssets.xcassets in Resources */,
 				75CD55882833DF97001291EF /* MainTabBarViewController.storyboard in Resources */,
+				75CD56012833E92A001291EF /* RegistrationViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,6 +964,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CD55F72833E92A001291EF /* SignInViewModel.swift in Sources */,
+				75CD55FD2833E92A001291EF /* WelcomeViewController.swift in Sources */,
 				75CD55272833DB2E001291EF /* CatalogCategoryEntity+CoreDataClass.swift in Sources */,
 				75CD552F2833DB2E001291EF /* UserEntity+CoreDataProperties.swift in Sources */,
 				75CD558A2833DF97001291EF /* MainTabBarRouter.swift in Sources */,
@@ -921,6 +999,7 @@
 				75CD54A62833DA9C001291EF /* Signal.swift in Sources */,
 				75CD55202833DB2E001291EF /* CurrentUserEntity+CoreDataProperties.swift in Sources */,
 				75CD554E2833DB2E001291EF /* GetUserResponse.swift in Sources */,
+				75CD55F52833E92A001291EF /* WelcomeFlowRouter.swift in Sources */,
 				75CD55262833DB2E001291EF /* TemplateListEntity+CoreDataClass.swift in Sources */,
 				75CD555A2833DB2E001291EF /* MockShoppingListService.swift in Sources */,
 				75CD55442833DB2E001291EF /* ShoppingLIstService+User.swift in Sources */,
@@ -957,6 +1036,7 @@
 				75CD54962833DA19001291EF /* String+Characters.swift in Sources */,
 				75CD55462833DB2E001291EF /* CategoryResponse.swift in Sources */,
 				75CD55932833DFF3001291EF /* DateTimeFormatter+Time.swift in Sources */,
+				75CD55FC2833E92A001291EF /* ConfirmPhoneNumberViewModel.swift in Sources */,
 				75CD554F2833DB2E001291EF /* GetNotificationsRequest.swift in Sources */,
 				75CD55492833DB2E001291EF /* CheckRegistrationObject.swift in Sources */,
 				75CD549C2833DA57001291EF /* DebugLog.swift in Sources */,
@@ -969,6 +1049,7 @@
 				75CD547E2833D8FC001291EF /* AppDelegate.swift in Sources */,
 				75CD55B52833E0A1001291EF /* SelfSizedTableView.swift in Sources */,
 				75CD54B42833DAD2001291EF /* NetworkResponse.swift in Sources */,
+				75CD55F82833E92A001291EF /* SignInViewController.swift in Sources */,
 				75CD551C2833DB2E001291EF /* MigrationPolicyV5toV6.swift in Sources */,
 				75CD554D2833DB2E001291EF /* GetUserRequest.swift in Sources */,
 				75CD55472833DB2E001291EF /* GetCatalogResponse.swift in Sources */,
@@ -984,6 +1065,8 @@
 				75CD55B42833E0A1001291EF /* SwipeableViewController.swift in Sources */,
 				75CD55222833DB2E001291EF /* ShareEntity+CoreDataClass.swift in Sources */,
 				75CD555E2833DB2E001291EF /* UserLoginResponse.swift in Sources */,
+				75CD56032833E92A001291EF /* RegistrationViewController.swift in Sources */,
+				75CD55FA2833E92A001291EF /* ConfirmPhoneNumberViewController.swift in Sources */,
 				75CD55A82833E039001291EF /* UITextView+Attributes.swift in Sources */,
 				75CD55212833DB2E001291EF /* UserEntity+CoreDataClass.swift in Sources */,
 				75CD55782833DB4C001291EF /* SharesManager.swift in Sources */,
@@ -996,6 +1079,7 @@
 				75CD55892833DF97001291EF /* MainTabBarViewModel.swift in Sources */,
 				75CD55772833DB4C001291EF /* PhoneNumberManager.swift in Sources */,
 				75CD55342833DB2E001291EF /* GetDataObject.swift in Sources */,
+				75CD56022833E92A001291EF /* RegistrationViewModel.swift in Sources */,
 				75CD55242833DB2E001291EF /* CatalogCategoryEntity+CoreDataProperties.swift in Sources */,
 				75CD54B32833DAD2001291EF /* NetworkClient.swift in Sources */,
 				75CD558B2833DF97001291EF /* MainTabBarViewController.swift in Sources */,

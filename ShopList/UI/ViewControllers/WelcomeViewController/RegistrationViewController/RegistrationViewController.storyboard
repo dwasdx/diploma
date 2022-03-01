@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v73-Cb-rjN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Registration View Controller-->
+        <scene sceneID="Csi-AW-a4L">
+            <objects>
+                <viewController id="v73-Cb-rjN" customClass="RegistrationViewController" customModule="ShopList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Egs-sj-WRI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tmm-Xr-SYV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tG6-1i-89c" appends="YES" id="uJb-ub-VKS"/>
+                                </connections>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hc-Qi-4pz">
+                                <rect key="frame" x="0.0" y="465" width="414" height="431"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6b-uB-2cB" userLabel="Container View" customClass="DesignableView" customModule="ShopList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txt-lh-Ub9">
+                                                <rect key="frame" x="147.5" y="32" width="119.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                                <color key="textColor" name="shoppinglist.text.black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8de-tL-CEg" userLabel="LineUnderTextField">
+                                                <rect key="frame" x="24" y="121" width="366" height="1"/>
+                                                <color key="backgroundColor" name="shoppinglist.icons.gray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="jOP-Gr-JW0"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Og-e2-6Wh" customClass="DesignableTextField" customModule="ShopList" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="98.5" width="366" height="22.5"/>
+                                                <color key="textColor" name="shoppinglist.text.black"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                        <color key="value" name="shoppinglist.text.gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="editingChanged:" destination="v73-Cb-rjN" eventType="editingChanged" id="Bet-MY-Jiw"/>
+                                                    <outlet property="delegate" destination="v73-Cb-rjN" id="u5k-r2-nrT"/>
+                                                </connections>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbO-rE-bc4" userLabel="LineUnderTextField">
+                                                <rect key="frame" x="24" y="197.5" width="366" height="1"/>
+                                                <color key="backgroundColor" name="shoppinglist.icons.gray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="YxN-FN-8gl"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c11-Gm-Dlp" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
+                                                <rect key="frame" x="24" y="175" width="366" height="22.5"/>
+                                                <color key="textColor" name="shoppinglist.text.black"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="decimalPad" textContentType="tel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                        <color key="value" name="shoppinglist.text.gray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="editingChanged:" destination="v73-Cb-rjN" eventType="editingChanged" id="K1F-df-KbN"/>
+                                                    <outlet property="delegate" destination="v73-Cb-rjN" id="Z8y-BP-Lff"/>
+                                                </connections>
+                                            </textField>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ошибка телефона" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAf-lf-Lai">
+                                                <rect key="frame" x="24" y="202.5" width="366" height="14"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                <color key="textColor" red="0.92156862750000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ошибка имени" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1v-v6-Q0u">
+                                                <rect key="frame" x="24" y="126" width="366" height="14"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                <color key="textColor" red="0.92156862750000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL2-az-Ybp" customClass="DesignableButton" customModule="ShopList" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="288" width="366" height="48"/>
+                                                <color key="backgroundColor" name="shoppinglist.icons.gray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="qTf-kz-cOG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <state key="normal" title="Далее">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <point key="value" x="0.0" y="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="shoppinglist.shadow.green"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextButtonTapped" destination="v73-Cb-rjN" eventType="touchUpInside" id="lKf-ag-EPz"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QRX-ZS-mMb">
+                                                <rect key="frame" x="24" y="359" width="157.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Есть аккаунт?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcW-f1-J1L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                        <color key="textColor" name="shoppinglist.text.black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lap-r6-DQr">
+                                                        <rect key="frame" x="110.5" y="0.0" width="47" height="31"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Войти">
+                                                                    <attributes>
+                                                                        <color key="NSColor" name="shoppinglist.blue"/>
+                                                                        <font key="NSFont" metaFont="system" size="16"/>
+                                                                        <integer key="NSUnderline" value="1"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="signInButtonTapped" destination="v73-Cb-rjN" eventType="touchUpInside" id="qPT-y3-aeb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fdJ-1k-T5W">
+                                                <rect key="frame" x="197" y="302" width="20" height="20"/>
+                                                <color key="color" name="shoppinglist.orange"/>
+                                            </activityIndicatorView>
+                                            <textView clipsSubviews="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApY-Oa-irk">
+                                                <rect key="frame" x="380" y="232.5" width="10" height="33"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="8de-tL-CEg" firstAttribute="leading" secondItem="1Og-e2-6Wh" secondAttribute="leading" id="6id-NP-Lch"/>
+                                            <constraint firstAttribute="trailing" secondItem="dL2-az-Ybp" secondAttribute="trailing" constant="24" id="8Cz-Qt-MSM"/>
+                                            <constraint firstItem="c11-Gm-Dlp" firstAttribute="leading" secondItem="l6b-uB-2cB" secondAttribute="leading" constant="24" id="8jq-Fg-Tnz"/>
+                                            <constraint firstAttribute="trailing" secondItem="ApY-Oa-irk" secondAttribute="trailing" constant="24" id="A5C-uw-9Vl"/>
+                                            <constraint firstItem="fdJ-1k-T5W" firstAttribute="centerY" secondItem="dL2-az-Ybp" secondAttribute="centerY" id="BBc-J0-nTz"/>
+                                            <constraint firstItem="b1v-v6-Q0u" firstAttribute="trailing" secondItem="8de-tL-CEg" secondAttribute="trailing" id="Btn-sb-ujw"/>
+                                            <constraint firstItem="8de-tL-CEg" firstAttribute="trailing" secondItem="1Og-e2-6Wh" secondAttribute="trailing" id="CCD-IJ-uje"/>
+                                            <constraint firstAttribute="bottom" secondItem="QRX-ZS-mMb" secondAttribute="bottom" constant="41" id="ECm-Cr-LFh"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Og-e2-6Wh" secondAttribute="trailing" constant="24" id="Hjp-n9-i2p"/>
+                                            <constraint firstItem="Txt-lh-Ub9" firstAttribute="centerX" secondItem="l6b-uB-2cB" secondAttribute="centerX" id="K6r-IU-vsY"/>
+                                            <constraint firstItem="vAf-lf-Lai" firstAttribute="trailing" secondItem="XbO-rE-bc4" secondAttribute="trailing" id="KOd-cE-QYK"/>
+                                            <constraint firstItem="XbO-rE-bc4" firstAttribute="leading" secondItem="c11-Gm-Dlp" secondAttribute="leading" id="Mek-ka-2tU"/>
+                                            <constraint firstItem="1Og-e2-6Wh" firstAttribute="top" secondItem="Txt-lh-Ub9" secondAttribute="bottom" constant="43" id="ND9-pV-ryT"/>
+                                            <constraint firstItem="XbO-rE-bc4" firstAttribute="trailing" secondItem="c11-Gm-Dlp" secondAttribute="trailing" id="Pbo-fq-coG"/>
+                                            <constraint firstItem="QRX-ZS-mMb" firstAttribute="top" secondItem="dL2-az-Ybp" secondAttribute="bottom" constant="23" id="QZf-rF-cWK"/>
+                                            <constraint firstItem="vAf-lf-Lai" firstAttribute="leading" secondItem="XbO-rE-bc4" secondAttribute="leading" id="S68-9Z-UDs"/>
+                                            <constraint firstItem="c11-Gm-Dlp" firstAttribute="top" secondItem="8de-tL-CEg" secondAttribute="bottom" constant="53" id="SI3-N3-u1b"/>
+                                            <constraint firstAttribute="height" constant="431" id="VjZ-gq-l6a"/>
+                                            <constraint firstAttribute="trailing" secondItem="c11-Gm-Dlp" secondAttribute="trailing" constant="24" id="W8g-DB-EiP"/>
+                                            <constraint firstItem="ApY-Oa-irk" firstAttribute="top" secondItem="vAf-lf-Lai" secondAttribute="bottom" constant="16" id="Z7l-sb-CgS"/>
+                                            <constraint firstItem="dL2-az-Ybp" firstAttribute="leading" secondItem="l6b-uB-2cB" secondAttribute="leading" constant="24" id="aiI-nS-szd"/>
+                                            <constraint firstItem="vAf-lf-Lai" firstAttribute="top" secondItem="XbO-rE-bc4" secondAttribute="bottom" constant="4" id="bQA-tY-KWd"/>
+                                            <constraint firstItem="8de-tL-CEg" firstAttribute="top" secondItem="1Og-e2-6Wh" secondAttribute="bottom" id="gMU-st-KIy"/>
+                                            <constraint firstItem="XbO-rE-bc4" firstAttribute="top" secondItem="c11-Gm-Dlp" secondAttribute="bottom" id="htv-K0-BiW"/>
+                                            <constraint firstItem="Txt-lh-Ub9" firstAttribute="top" secondItem="l6b-uB-2cB" secondAttribute="top" constant="32" id="piR-LD-AjF"/>
+                                            <constraint firstItem="1Og-e2-6Wh" firstAttribute="leading" secondItem="l6b-uB-2cB" secondAttribute="leading" constant="24" id="ps2-Ry-v9F"/>
+                                            <constraint firstItem="b1v-v6-Q0u" firstAttribute="top" secondItem="8de-tL-CEg" secondAttribute="bottom" constant="4" id="qco-po-IcD"/>
+                                            <constraint firstItem="QRX-ZS-mMb" firstAttribute="leading" secondItem="dL2-az-Ybp" secondAttribute="leading" id="t2v-Hg-wp5"/>
+                                            <constraint firstItem="fdJ-1k-T5W" firstAttribute="centerX" secondItem="dL2-az-Ybp" secondAttribute="centerX" id="vke-Y7-rUI"/>
+                                            <constraint firstItem="b1v-v6-Q0u" firstAttribute="leading" secondItem="8de-tL-CEg" secondAttribute="leading" id="yBb-ID-zzX"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="28"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="YGN-3h-WLj" appends="YES" id="5a2-T4-4Ma"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="l6b-uB-2cB" firstAttribute="width" secondItem="6hc-Qi-4pz" secondAttribute="width" id="71x-nU-TPd"/>
+                                    <constraint firstAttribute="height" priority="999" constant="431" id="R60-va-i3c"/>
+                                    <constraint firstItem="l6b-uB-2cB" firstAttribute="leading" secondItem="4Eu-FZ-KhZ" secondAttribute="leading" id="SCI-eh-RQY"/>
+                                    <constraint firstItem="l6b-uB-2cB" firstAttribute="trailing" secondItem="4Eu-FZ-KhZ" secondAttribute="trailing" id="YVj-Sv-qr2"/>
+                                    <constraint firstItem="l6b-uB-2cB" firstAttribute="bottom" secondItem="4Eu-FZ-KhZ" secondAttribute="bottom" id="e9A-1t-maZ"/>
+                                    <constraint firstItem="l6b-uB-2cB" firstAttribute="top" secondItem="4Eu-FZ-KhZ" secondAttribute="top" id="nJE-fw-HMp"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="4Eu-FZ-KhZ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="rBI-vF-QFf"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WOS-tU-lUi" appends="YES" id="Xle-LN-Vlr"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9V7-LA-Urz"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Tmm-Xr-SYV" firstAttribute="top" secondItem="Egs-sj-WRI" secondAttribute="top" id="2rz-To-syD"/>
+                            <constraint firstAttribute="bottom" secondItem="6hc-Qi-4pz" secondAttribute="bottom" id="34v-gx-MgF"/>
+                            <constraint firstItem="6hc-Qi-4pz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9V7-LA-Urz" secondAttribute="top" id="4A1-u7-xhi"/>
+                            <constraint firstItem="6hc-Qi-4pz" firstAttribute="leading" secondItem="9V7-LA-Urz" secondAttribute="leading" id="Civ-dX-WOf"/>
+                            <constraint firstItem="6hc-Qi-4pz" firstAttribute="trailing" secondItem="9V7-LA-Urz" secondAttribute="trailing" id="DOj-Tm-UvI"/>
+                            <constraint firstItem="Tmm-Xr-SYV" firstAttribute="leading" secondItem="9V7-LA-Urz" secondAttribute="leading" id="HrH-QA-pmE"/>
+                            <constraint firstItem="Tmm-Xr-SYV" firstAttribute="trailing" secondItem="9V7-LA-Urz" secondAttribute="trailing" id="aw2-ST-2Yr"/>
+                            <constraint firstItem="Tmm-Xr-SYV" firstAttribute="bottom" secondItem="Egs-sj-WRI" secondAttribute="bottom" id="xPQ-o4-5on"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="l6b-uB-2cB" id="0Wb-tQ-RzL"/>
+                        <outlet property="loadingIndicator" destination="fdJ-1k-T5W" id="7a5-1W-LO1"/>
+                        <outlet property="nameErrorLabel" destination="b1v-v6-Q0u" id="KLq-IK-N39"/>
+                        <outlet property="nameTextField" destination="1Og-e2-6Wh" id="wBw-Dw-HGo"/>
+                        <outlet property="nameUnderline" destination="8de-tL-CEg" id="kvr-LB-pRo"/>
+                        <outlet property="nextButton" destination="dL2-az-Ybp" id="1xE-o1-v66"/>
+                        <outlet property="phoneErrorLabel" destination="vAf-lf-Lai" id="mPF-vV-mXZ"/>
+                        <outlet property="phoneTextField" destination="c11-Gm-Dlp" id="Ah2-ca-hYH"/>
+                        <outlet property="phoneUnderline" destination="XbO-rE-bc4" id="gxe-iR-CxT"/>
+                        <outlet property="scrollView" destination="6hc-Qi-4pz" id="cBQ-GK-ZKR"/>
+                        <outlet property="scrollViewHeightAnchor" destination="R60-va-i3c" id="XKd-KB-KXW"/>
+                        <outlet property="scrollViewYPosition" destination="34v-gx-MgF" id="49S-Nt-Ydl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpw-KC-XmY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tG6-1i-89c">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="v73-Cb-rjN" id="hjy-K2-nHn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="YGN-3h-WLj">
+                    <connections>
+                        <action selector="didPanContainerView:" destination="v73-Cb-rjN" id="yUK-Mp-GH6"/>
+                        <outlet property="delegate" destination="v73-Cb-rjN" id="W08-Kn-7OP"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="WOS-tU-lUi">
+                    <connections>
+                        <action selector="scrollViewTapped:" destination="v73-Cb-rjN" id="IuX-jf-Rhl"/>
+                        <outlet property="delegate" destination="v73-Cb-rjN" id="m5u-Qh-2GU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="36.231884057971016" y="176.11607142857142"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1Og-e2-6Wh">
+            <size key="intrinsicContentSize" width="35.5" height="22.5"/>
+        </designable>
+        <designable name="dL2-az-Ybp">
+            <size key="intrinsicContentSize" width="47" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="shoppinglist.blue">
+            <color red="0.42745098039215684" green="0.61960784313725492" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.icons.gray">
+            <color red="0.75300002098083496" green="0.75300002098083496" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.orange">
+            <color red="1" green="0.70200002193450928" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.shadow.green">
+            <color red="0.34900000691413879" green="0.32499998807907104" blue="0.13300000131130219" alpha="0.15999999642372131" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.text.black">
+            <color red="0.054999999701976776" green="0.039000000804662704" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.text.gray">
+            <color red="0.59200000762939453" green="0.60799998044967651" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
