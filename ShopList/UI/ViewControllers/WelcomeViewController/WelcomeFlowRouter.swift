@@ -94,30 +94,13 @@ extension WelcomeFlowRouter: RegistrationViewControllerRouting {
         }
     }
     
-    func presentConfidentialityAgreementViewController(_ completion: (() -> Void)?) {
-        guard let registrationViewController = navigationController.viewControllers.first(where: { $0 is RegistrationViewController }) as? RegistrationViewController else {
-            return
+    func presentWelcomeViewController(_ completion: (() -> Void)?) {
+        initialViewController?.dismiss(animated: true) {
+            self.navigationController.viewControllers.removeAll()
+            completion?()
         }
-        
-        let vc = ConfidentialityAgreementViewController.initFromItsStoryboard()
-        vc.viewModel = ConfidentialityAgreementViewModel()
-        vc.router = self
-        vc.modalPresentationStyle = .custom
-        vc.modalTransitionStyle = .crossDissolve
-        registrationViewController.present(vc, animated: true, completion: completion)
+        return
     }
-    
-}
-
-extension WelcomeFlowRouter: ConfidentialityAgreementRouting {
-    func navigateBackToRegistraion(_ completion: (() -> Void)?) {
-        guard let registrationVC = navigationController.viewControllers.first(where: { $0 is RegistrationViewController }) as? RegistrationViewController else {
-            return
-        }
-        registrationVC.presentedViewController?.dismiss(animated: true, completion: completion)
-    }
-    
-    
 }
 
 extension WelcomeFlowRouter: ConfirmPhoneNumberViewControllerRouting {

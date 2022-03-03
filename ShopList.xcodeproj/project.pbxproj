@@ -145,6 +145,88 @@
 		75CD56012833E92A001291EF /* RegistrationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD55DE2833E92A001291EF /* RegistrationViewController.storyboard */; };
 		75CD56022833E92A001291EF /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55DF2833E92A001291EF /* RegistrationViewModel.swift */; };
 		75CD56032833E92A001291EF /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55E02833E92A001291EF /* RegistrationViewController.swift */; };
+		75CD5629283417AD001291EF /* ApprovedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5613283417AC001291EF /* ApprovedViewController.storyboard */; };
+		75CD562A283417AD001291EF /* ApprovedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5614283417AC001291EF /* ApprovedViewController.swift */; };
+		75CD562B283417AD001291EF /* RateAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5616283417AC001291EF /* RateAppViewController.swift */; };
+		75CD562C283417AD001291EF /* RateAppViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5617283417AC001291EF /* RateAppViewController.storyboard */; };
+		75CD562D283417AD001291EF /* RateAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5618283417AC001291EF /* RateAppViewModel.swift */; };
+		75CD562E283417AD001291EF /* UserProfileFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5619283417AC001291EF /* UserProfileFlowRouter.swift */; };
+		75CD562F283417AD001291EF /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD561B283417AC001291EF /* UserProfileViewController.swift */; };
+		75CD5630283417AD001291EF /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD561C283417AC001291EF /* UserProfileViewModel.swift */; };
+		75CD5631283417AD001291EF /* RatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD561D283417AC001291EF /* RatingController.swift */; };
+		75CD5632283417AD001291EF /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD561F283417AC001291EF /* ChangeNameViewController.swift */; };
+		75CD5633283417AD001291EF /* ChangeNameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5620283417AC001291EF /* ChangeNameViewController.storyboard */; };
+		75CD5634283417AD001291EF /* ApprovedNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5622283417AC001291EF /* ApprovedNameViewModel.swift */; };
+		75CD5635283417AD001291EF /* ChangeNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5623283417AC001291EF /* ChangeNameViewModel.swift */; };
+		75CD5636283417AD001291EF /* LogOutConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5625283417AC001291EF /* LogOutConfirmationViewModel.swift */; };
+		75CD5637283417AD001291EF /* LogOutConfirmationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5626283417AC001291EF /* LogOutConfirmationViewController.storyboard */; };
+		75CD5638283417AD001291EF /* LogOutConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5627283417AC001291EF /* LogOutConfirmationViewController.swift */; };
+		75CD5639283417AD001291EF /* UserProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5628283417AC001291EF /* UserProfileViewController.storyboard */; };
+		75CD5690283419AF001291EF /* ShoppingListFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD563B283419AF001291EF /* ShoppingListFlowRouter.swift */; };
+		75CD5691283419AF001291EF /* ShoppingListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD563E283419AF001291EF /* ShoppingListCollectionViewCell.swift */; };
+		75CD5692283419AF001291EF /* ShareListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD563F283419AF001291EF /* ShareListCollectionViewCell.swift */; };
+		75CD5693283419AF001291EF /* ShoppingListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5640283419AF001291EF /* ShoppingListViewController.storyboard */; };
+		75CD5694283419AF001291EF /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5641283419AF001291EF /* GeneralModel.swift */; };
+		75CD5695283419AF001291EF /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5643283419AF001291EF /* ShoppingListTableViewCell.swift */; };
+		75CD5696283419AF001291EF /* ShareListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5644283419AF001291EF /* ShareListTableViewCell.swift */; };
+		75CD5697283419AF001291EF /* ShoppingListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5645283419AF001291EF /* ShoppingListModel.swift */; };
+		75CD5698283419AF001291EF /* CreateShoppingListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5647283419AF001291EF /* CreateShoppingListViewController.storyboard */; };
+		75CD5699283419AF001291EF /* CreateShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5648283419AF001291EF /* CreateShoppingListViewModel.swift */; };
+		75CD569A283419AF001291EF /* CreateShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5649283419AF001291EF /* CreateShoppingListViewController.swift */; };
+		75CD569B283419AF001291EF /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD564A283419AF001291EF /* ShoppingListViewModel.swift */; };
+		75CD569C283419AF001291EF /* DeleteShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD564C283419AF001291EF /* DeleteShoppingListViewModel.swift */; };
+		75CD569D283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD564D283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.storyboard */; };
+		75CD569E283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD564E283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.swift */; };
+		75CD569F283419AF001291EF /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD564F283419AF001291EF /* ShoppingListViewController.swift */; };
+		75CD56A0283419AF001291EF /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5650283419AF001291EF /* ShareModel.swift */; };
+		75CD56A1283419AF001291EF /* ProductsListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5652283419AF001291EF /* ProductsListViewController.storyboard */; };
+		75CD56A2283419AF001291EF /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5653283419AF001291EF /* ProductsListViewController.swift */; };
+		75CD56A3283419AF001291EF /* UncheckAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5655283419AF001291EF /* UncheckAllViewController.swift */; };
+		75CD56A4283419AF001291EF /* UncheckAllViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5656283419AF001291EF /* UncheckAllViewController.storyboard */; };
+		75CD56A5283419AF001291EF /* UncheckAllViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5657283419AF001291EF /* UncheckAllViewModel.swift */; };
+		75CD56A6283419AF001291EF /* CheckableProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5659283419AF001291EF /* CheckableProductListTableViewCell.swift */; };
+		75CD56A7283419AF001291EF /* CartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD565A283419AF001291EF /* CartHeaderView.swift */; };
+		75CD56A8283419AF001291EF /* AddNewProductHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD565B283419AF001291EF /* AddNewProductHeaderView.swift */; };
+		75CD56A9283419AF001291EF /* AddNewProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD565C283419AF001291EF /* AddNewProductTableViewCell.swift */; };
+		75CD56AA283419AF001291EF /* CartHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75CD565D283419AF001291EF /* CartHeaderView.xib */; };
+		75CD56AB283419AF001291EF /* ChangeNameShoppingListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD565F283419AF001291EF /* ChangeNameShoppingListViewController.storyboard */; };
+		75CD56AC283419AF001291EF /* ChangeNameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5660283419AF001291EF /* ChangeNameListViewModel.swift */; };
+		75CD56AD283419AF001291EF /* ChangeNameShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5661283419AF001291EF /* ChangeNameShoppingListViewController.swift */; };
+		75CD56AE283419AF001291EF /* ListMembersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5664283419AF001291EF /* ListMembersTableViewCell.swift */; };
+		75CD56AF283419AF001291EF /* LIstMemberTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5665283419AF001291EF /* LIstMemberTableViewHeaderView.swift */; };
+		75CD56B0283419AF001291EF /* ListMembersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5666283419AF001291EF /* ListMembersViewModel.swift */; };
+		75CD56B1283419AF001291EF /* ListMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5667283419AF001291EF /* ListMembersViewController.swift */; };
+		75CD56B2283419AF001291EF /* ListMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5669283419AF001291EF /* ListMemberModel.swift */; };
+		75CD56B3283419AF001291EF /* ListMemberCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD566A283419AF001291EF /* ListMemberCategoryModel.swift */; };
+		75CD56B4283419AF001291EF /* ListMembersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD566B283419AF001291EF /* ListMembersViewController.storyboard */; };
+		75CD56B5283419AF001291EF /* ContactTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD566E283419AF001291EF /* ContactTableViewHeaderView.swift */; };
+		75CD56B6283419AF001291EF /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD566F283419AF001291EF /* ContactTableViewCell.swift */; };
+		75CD56B7283419AF001291EF /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5670283419AF001291EF /* ContactsViewController.swift */; };
+		75CD56B8283419AF001291EF /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5671283419AF001291EF /* ContactsViewModel.swift */; };
+		75CD56B9283419AF001291EF /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5673283419AF001291EF /* ContactModel.swift */; };
+		75CD56BA283419AF001291EF /* ContactsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5674283419AF001291EF /* ContactsViewController.storyboard */; };
+		75CD56BB283419AF001291EF /* ShareAppViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5676283419AF001291EF /* ShareAppViewController.storyboard */; };
+		75CD56BC283419AF001291EF /* ShareAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5677283419AF001291EF /* ShareAppViewController.swift */; };
+		75CD56BD283419AF001291EF /* ShareAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5678283419AF001291EF /* ShareAppViewModel.swift */; };
+		75CD56BE283419AF001291EF /* ListActtionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD567A283419AF001291EF /* ListActtionsTableViewCell.swift */; };
+		75CD56BF283419AF001291EF /* ListActionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD567B283419AF001291EF /* ListActionsViewModel.swift */; };
+		75CD56C0283419AF001291EF /* ListActtionsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD567C283419AF001291EF /* ListActtionsViewController.storyboard */; };
+		75CD56C1283419AF001291EF /* ListActtionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD567D283419AF001291EF /* ListActtionsViewController.swift */; };
+		75CD56C2283419AF001291EF /* ListActtionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD567E283419AF001291EF /* ListActtionsModel.swift */; };
+		75CD56C3283419AF001291EF /* DeleteProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5680283419AF001291EF /* DeleteProductViewModel.swift */; };
+		75CD56C4283419AF001291EF /* DeleteProductConfirmationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5681283419AF001291EF /* DeleteProductConfirmationViewController.storyboard */; };
+		75CD56C5283419AF001291EF /* DeleteProductConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5682283419AF001291EF /* DeleteProductConfirmationViewController.swift */; };
+		75CD56C6283419AF001291EF /* ChangeValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5684283419AF001291EF /* ChangeValueViewController.swift */; };
+		75CD56C7283419AF001291EF /* ChangeValueViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD5685283419AF001291EF /* ChangeValueViewController.storyboard */; };
+		75CD56C8283419AF001291EF /* ChangeValueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5686283419AF001291EF /* ChangeValueViewModel.swift */; };
+		75CD56C9283419AF001291EF /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5687283419AF001291EF /* ProductsListViewModel.swift */; };
+		75CD56CA283419AF001291EF /* AddNewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5689283419AF001291EF /* AddNewProductViewController.swift */; };
+		75CD56CB283419AF001291EF /* AddNewProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD568A283419AF001291EF /* AddNewProductViewModel.swift */; };
+		75CD56CC283419AF001291EF /* AddNewProductViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD568B283419AF001291EF /* AddNewProductViewController.storyboard */; };
+		75CD56CD283419AF001291EF /* ProductCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD568C283419AF001291EF /* ProductCategoryViewModel.swift */; };
+		75CD56CE283419AF001291EF /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD568D283419AF001291EF /* ProductViewModel.swift */; };
+		75CD56CF283419AF001291EF /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD568E283419AF001291EF /* ProductModel.swift */; };
+		75CD56D0283419AF001291EF /* ProductsListFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD568F283419AF001291EF /* ProductsListFlowRouter.swift */; };
 		A2CDE33EA2ABA2EB445847BC /* Pods_ShopList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F09589BAC5043FC40F347B /* Pods_ShopList.framework */; };
 /* End PBXBuildFile section */
 
@@ -297,6 +379,88 @@
 		75CD55DE2833E92A001291EF /* RegistrationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegistrationViewController.storyboard; sourceTree = "<group>"; };
 		75CD55DF2833E92A001291EF /* RegistrationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		75CD55E02833E92A001291EF /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		75CD5613283417AC001291EF /* ApprovedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ApprovedViewController.storyboard; sourceTree = "<group>"; };
+		75CD5614283417AC001291EF /* ApprovedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApprovedViewController.swift; sourceTree = "<group>"; };
+		75CD5616283417AC001291EF /* RateAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateAppViewController.swift; sourceTree = "<group>"; };
+		75CD5617283417AC001291EF /* RateAppViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RateAppViewController.storyboard; sourceTree = "<group>"; };
+		75CD5618283417AC001291EF /* RateAppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateAppViewModel.swift; sourceTree = "<group>"; };
+		75CD5619283417AC001291EF /* UserProfileFlowRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileFlowRouter.swift; sourceTree = "<group>"; };
+		75CD561B283417AC001291EF /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		75CD561C283417AC001291EF /* UserProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		75CD561D283417AC001291EF /* RatingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingController.swift; sourceTree = "<group>"; };
+		75CD561F283417AC001291EF /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
+		75CD5620283417AC001291EF /* ChangeNameViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChangeNameViewController.storyboard; sourceTree = "<group>"; };
+		75CD5622283417AC001291EF /* ApprovedNameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApprovedNameViewModel.swift; sourceTree = "<group>"; };
+		75CD5623283417AC001291EF /* ChangeNameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewModel.swift; sourceTree = "<group>"; };
+		75CD5625283417AC001291EF /* LogOutConfirmationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutConfirmationViewModel.swift; sourceTree = "<group>"; };
+		75CD5626283417AC001291EF /* LogOutConfirmationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogOutConfirmationViewController.storyboard; sourceTree = "<group>"; };
+		75CD5627283417AC001291EF /* LogOutConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutConfirmationViewController.swift; sourceTree = "<group>"; };
+		75CD5628283417AC001291EF /* UserProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfileViewController.storyboard; sourceTree = "<group>"; };
+		75CD563B283419AF001291EF /* ShoppingListFlowRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListFlowRouter.swift; sourceTree = "<group>"; };
+		75CD563E283419AF001291EF /* ShoppingListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListCollectionViewCell.swift; sourceTree = "<group>"; };
+		75CD563F283419AF001291EF /* ShareListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareListCollectionViewCell.swift; sourceTree = "<group>"; };
+		75CD5640283419AF001291EF /* ShoppingListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingListViewController.storyboard; sourceTree = "<group>"; };
+		75CD5641283419AF001291EF /* GeneralModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
+		75CD5643283419AF001291EF /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
+		75CD5644283419AF001291EF /* ShareListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareListTableViewCell.swift; sourceTree = "<group>"; };
+		75CD5645283419AF001291EF /* ShoppingListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListModel.swift; sourceTree = "<group>"; };
+		75CD5647283419AF001291EF /* CreateShoppingListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateShoppingListViewController.storyboard; sourceTree = "<group>"; };
+		75CD5648283419AF001291EF /* CreateShoppingListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateShoppingListViewModel.swift; sourceTree = "<group>"; };
+		75CD5649283419AF001291EF /* CreateShoppingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateShoppingListViewController.swift; sourceTree = "<group>"; };
+		75CD564A283419AF001291EF /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
+		75CD564C283419AF001291EF /* DeleteShoppingListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteShoppingListViewModel.swift; sourceTree = "<group>"; };
+		75CD564D283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DeleteShoppingLIstConfirmationViewController.storyboard; sourceTree = "<group>"; };
+		75CD564E283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteShoppingLIstConfirmationViewController.swift; sourceTree = "<group>"; };
+		75CD564F283419AF001291EF /* ShoppingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		75CD5650283419AF001291EF /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
+		75CD5652283419AF001291EF /* ProductsListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductsListViewController.storyboard; sourceTree = "<group>"; };
+		75CD5653283419AF001291EF /* ProductsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
+		75CD5655283419AF001291EF /* UncheckAllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UncheckAllViewController.swift; sourceTree = "<group>"; };
+		75CD5656283419AF001291EF /* UncheckAllViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UncheckAllViewController.storyboard; sourceTree = "<group>"; };
+		75CD5657283419AF001291EF /* UncheckAllViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UncheckAllViewModel.swift; sourceTree = "<group>"; };
+		75CD5659283419AF001291EF /* CheckableProductListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckableProductListTableViewCell.swift; sourceTree = "<group>"; };
+		75CD565A283419AF001291EF /* CartHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartHeaderView.swift; sourceTree = "<group>"; };
+		75CD565B283419AF001291EF /* AddNewProductHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewProductHeaderView.swift; sourceTree = "<group>"; };
+		75CD565C283419AF001291EF /* AddNewProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewProductTableViewCell.swift; sourceTree = "<group>"; };
+		75CD565D283419AF001291EF /* CartHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartHeaderView.xib; sourceTree = "<group>"; };
+		75CD565F283419AF001291EF /* ChangeNameShoppingListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChangeNameShoppingListViewController.storyboard; sourceTree = "<group>"; };
+		75CD5660283419AF001291EF /* ChangeNameListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameListViewModel.swift; sourceTree = "<group>"; };
+		75CD5661283419AF001291EF /* ChangeNameShoppingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameShoppingListViewController.swift; sourceTree = "<group>"; };
+		75CD5664283419AF001291EF /* ListMembersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMembersTableViewCell.swift; sourceTree = "<group>"; };
+		75CD5665283419AF001291EF /* LIstMemberTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIstMemberTableViewHeaderView.swift; sourceTree = "<group>"; };
+		75CD5666283419AF001291EF /* ListMembersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMembersViewModel.swift; sourceTree = "<group>"; };
+		75CD5667283419AF001291EF /* ListMembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMembersViewController.swift; sourceTree = "<group>"; };
+		75CD5669283419AF001291EF /* ListMemberModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMemberModel.swift; sourceTree = "<group>"; };
+		75CD566A283419AF001291EF /* ListMemberCategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMemberCategoryModel.swift; sourceTree = "<group>"; };
+		75CD566B283419AF001291EF /* ListMembersViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListMembersViewController.storyboard; sourceTree = "<group>"; };
+		75CD566E283419AF001291EF /* ContactTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewHeaderView.swift; sourceTree = "<group>"; };
+		75CD566F283419AF001291EF /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		75CD5670283419AF001291EF /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		75CD5671283419AF001291EF /* ContactsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		75CD5673283419AF001291EF /* ContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		75CD5674283419AF001291EF /* ContactsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactsViewController.storyboard; sourceTree = "<group>"; };
+		75CD5676283419AF001291EF /* ShareAppViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareAppViewController.storyboard; sourceTree = "<group>"; };
+		75CD5677283419AF001291EF /* ShareAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareAppViewController.swift; sourceTree = "<group>"; };
+		75CD5678283419AF001291EF /* ShareAppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareAppViewModel.swift; sourceTree = "<group>"; };
+		75CD567A283419AF001291EF /* ListActtionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActtionsTableViewCell.swift; sourceTree = "<group>"; };
+		75CD567B283419AF001291EF /* ListActionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActionsViewModel.swift; sourceTree = "<group>"; };
+		75CD567C283419AF001291EF /* ListActtionsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListActtionsViewController.storyboard; sourceTree = "<group>"; };
+		75CD567D283419AF001291EF /* ListActtionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActtionsViewController.swift; sourceTree = "<group>"; };
+		75CD567E283419AF001291EF /* ListActtionsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListActtionsModel.swift; sourceTree = "<group>"; };
+		75CD5680283419AF001291EF /* DeleteProductViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteProductViewModel.swift; sourceTree = "<group>"; };
+		75CD5681283419AF001291EF /* DeleteProductConfirmationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DeleteProductConfirmationViewController.storyboard; sourceTree = "<group>"; };
+		75CD5682283419AF001291EF /* DeleteProductConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteProductConfirmationViewController.swift; sourceTree = "<group>"; };
+		75CD5684283419AF001291EF /* ChangeValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeValueViewController.swift; sourceTree = "<group>"; };
+		75CD5685283419AF001291EF /* ChangeValueViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChangeValueViewController.storyboard; sourceTree = "<group>"; };
+		75CD5686283419AF001291EF /* ChangeValueViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeValueViewModel.swift; sourceTree = "<group>"; };
+		75CD5687283419AF001291EF /* ProductsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
+		75CD5689283419AF001291EF /* AddNewProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewProductViewController.swift; sourceTree = "<group>"; };
+		75CD568A283419AF001291EF /* AddNewProductViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewProductViewModel.swift; sourceTree = "<group>"; };
+		75CD568B283419AF001291EF /* AddNewProductViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddNewProductViewController.storyboard; sourceTree = "<group>"; };
+		75CD568C283419AF001291EF /* ProductCategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCategoryViewModel.swift; sourceTree = "<group>"; };
+		75CD568D283419AF001291EF /* ProductViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		75CD568E283419AF001291EF /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		75CD568F283419AF001291EF /* ProductsListFlowRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListFlowRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -717,6 +881,8 @@
 			children = (
 				75CD55CD2833E92A001291EF /* WelcomeViewController */,
 				75CD557E2833DF97001291EF /* MainTabBarViewController */,
+				75CD563A283419AF001291EF /* ShoppingListFlow */,
+				75CD5611283417AC001291EF /* UserProfileFlow */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -835,6 +1001,294 @@
 			path = RegistrationViewController;
 			sourceTree = "<group>";
 		};
+		75CD5611283417AC001291EF /* UserProfileFlow */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5619283417AC001291EF /* UserProfileFlowRouter.swift */,
+				75CD5612283417AC001291EF /* ApprovedAndReturnViewController */,
+				75CD5615283417AC001291EF /* RateAppViewController */,
+				75CD561A283417AC001291EF /* UserProfileViewController */,
+			);
+			path = UserProfileFlow;
+			sourceTree = "<group>";
+		};
+		75CD5612283417AC001291EF /* ApprovedAndReturnViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5614283417AC001291EF /* ApprovedViewController.swift */,
+				75CD5613283417AC001291EF /* ApprovedViewController.storyboard */,
+			);
+			path = ApprovedAndReturnViewController;
+			sourceTree = "<group>";
+		};
+		75CD5615283417AC001291EF /* RateAppViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5616283417AC001291EF /* RateAppViewController.swift */,
+				75CD5617283417AC001291EF /* RateAppViewController.storyboard */,
+				75CD5618283417AC001291EF /* RateAppViewModel.swift */,
+			);
+			path = RateAppViewController;
+			sourceTree = "<group>";
+		};
+		75CD561A283417AC001291EF /* UserProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD561D283417AC001291EF /* RatingController.swift */,
+				75CD561C283417AC001291EF /* UserProfileViewModel.swift */,
+				75CD561B283417AC001291EF /* UserProfileViewController.swift */,
+				75CD5628283417AC001291EF /* UserProfileViewController.storyboard */,
+				75CD561E283417AC001291EF /* ChangeNameViewController */,
+				75CD5624283417AC001291EF /* LogOutConfirmationViewController */,
+			);
+			path = UserProfileViewController;
+			sourceTree = "<group>";
+		};
+		75CD561E283417AC001291EF /* ChangeNameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5621283417AC001291EF /* ApprovedName */,
+				75CD5623283417AC001291EF /* ChangeNameViewModel.swift */,
+				75CD561F283417AC001291EF /* ChangeNameViewController.swift */,
+				75CD5620283417AC001291EF /* ChangeNameViewController.storyboard */,
+			);
+			path = ChangeNameViewController;
+			sourceTree = "<group>";
+		};
+		75CD5621283417AC001291EF /* ApprovedName */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5622283417AC001291EF /* ApprovedNameViewModel.swift */,
+			);
+			path = ApprovedName;
+			sourceTree = "<group>";
+		};
+		75CD5624283417AC001291EF /* LogOutConfirmationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5625283417AC001291EF /* LogOutConfirmationViewModel.swift */,
+				75CD5627283417AC001291EF /* LogOutConfirmationViewController.swift */,
+				75CD5626283417AC001291EF /* LogOutConfirmationViewController.storyboard */,
+			);
+			path = LogOutConfirmationViewController;
+			sourceTree = "<group>";
+		};
+		75CD563A283419AF001291EF /* ShoppingListFlow */ = {
+			isa = PBXGroup;
+			children = (
+				75CD563B283419AF001291EF /* ShoppingListFlowRouter.swift */,
+				75CD563C283419AF001291EF /* ShoppingListViewController */,
+				75CD5651283419AF001291EF /* ProductsListViewController */,
+			);
+			path = ShoppingListFlow;
+			sourceTree = "<group>";
+		};
+		75CD563C283419AF001291EF /* ShoppingListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5642283419AF001291EF /* ShoppingListTableViewCell */,
+				75CD563D283419AF001291EF /* Cells */,
+				75CD5641283419AF001291EF /* GeneralModel.swift */,
+				75CD5650283419AF001291EF /* ShareModel.swift */,
+				75CD5645283419AF001291EF /* ShoppingListModel.swift */,
+				75CD564A283419AF001291EF /* ShoppingListViewModel.swift */,
+				75CD564F283419AF001291EF /* ShoppingListViewController.swift */,
+				75CD5640283419AF001291EF /* ShoppingListViewController.storyboard */,
+				75CD5646283419AF001291EF /* CreateShoppingListViewController */,
+				75CD564B283419AF001291EF /* DeleteShoppingLIstConfirmationViewController */,
+			);
+			path = ShoppingListViewController;
+			sourceTree = "<group>";
+		};
+		75CD563D283419AF001291EF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				75CD563E283419AF001291EF /* ShoppingListCollectionViewCell.swift */,
+				75CD563F283419AF001291EF /* ShareListCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		75CD5642283419AF001291EF /* ShoppingListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5643283419AF001291EF /* ShoppingListTableViewCell.swift */,
+				75CD5644283419AF001291EF /* ShareListTableViewCell.swift */,
+			);
+			path = ShoppingListTableViewCell;
+			sourceTree = "<group>";
+		};
+		75CD5646283419AF001291EF /* CreateShoppingListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5648283419AF001291EF /* CreateShoppingListViewModel.swift */,
+				75CD5649283419AF001291EF /* CreateShoppingListViewController.swift */,
+				75CD5647283419AF001291EF /* CreateShoppingListViewController.storyboard */,
+			);
+			path = CreateShoppingListViewController;
+			sourceTree = "<group>";
+		};
+		75CD564B283419AF001291EF /* DeleteShoppingLIstConfirmationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD564C283419AF001291EF /* DeleteShoppingListViewModel.swift */,
+				75CD564E283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.swift */,
+				75CD564D283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.storyboard */,
+			);
+			path = DeleteShoppingLIstConfirmationViewController;
+			sourceTree = "<group>";
+		};
+		75CD5651283419AF001291EF /* ProductsListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5658283419AF001291EF /* TableViewCells */,
+				75CD568E283419AF001291EF /* ProductModel.swift */,
+				75CD568F283419AF001291EF /* ProductsListFlowRouter.swift */,
+				75CD5687283419AF001291EF /* ProductsListViewModel.swift */,
+				75CD5653283419AF001291EF /* ProductsListViewController.swift */,
+				75CD5652283419AF001291EF /* ProductsListViewController.storyboard */,
+				75CD5654283419AF001291EF /* UncheckAllViewController */,
+				75CD565E283419AF001291EF /* ChangeNameShoppingListViewController */,
+				75CD5662283419AF001291EF /* ListMembersViewController */,
+				75CD5679283419AF001291EF /* ListActtionsViewController */,
+				75CD567F283419AF001291EF /* DeleteProductConfirmationViewController */,
+				75CD5683283419AF001291EF /* ChangeValueViewController */,
+				75CD5688283419AF001291EF /* AddNewProductViewController */,
+			);
+			path = ProductsListViewController;
+			sourceTree = "<group>";
+		};
+		75CD5654283419AF001291EF /* UncheckAllViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5657283419AF001291EF /* UncheckAllViewModel.swift */,
+				75CD5655283419AF001291EF /* UncheckAllViewController.swift */,
+				75CD5656283419AF001291EF /* UncheckAllViewController.storyboard */,
+			);
+			path = UncheckAllViewController;
+			sourceTree = "<group>";
+		};
+		75CD5658283419AF001291EF /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				75CD565D283419AF001291EF /* CartHeaderView.xib */,
+				75CD565A283419AF001291EF /* CartHeaderView.swift */,
+				75CD5659283419AF001291EF /* CheckableProductListTableViewCell.swift */,
+				75CD565B283419AF001291EF /* AddNewProductHeaderView.swift */,
+				75CD565C283419AF001291EF /* AddNewProductTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		75CD565E283419AF001291EF /* ChangeNameShoppingListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5660283419AF001291EF /* ChangeNameListViewModel.swift */,
+				75CD5661283419AF001291EF /* ChangeNameShoppingListViewController.swift */,
+				75CD565F283419AF001291EF /* ChangeNameShoppingListViewController.storyboard */,
+			);
+			path = ChangeNameShoppingListViewController;
+			sourceTree = "<group>";
+		};
+		75CD5662283419AF001291EF /* ListMembersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5663283419AF001291EF /* ListMembersTableViewCells */,
+				75CD5669283419AF001291EF /* ListMemberModel.swift */,
+				75CD566A283419AF001291EF /* ListMemberCategoryModel.swift */,
+				75CD5666283419AF001291EF /* ListMembersViewModel.swift */,
+				75CD5667283419AF001291EF /* ListMembersViewController.swift */,
+				75CD566B283419AF001291EF /* ListMembersViewController.storyboard */,
+				75CD566C283419AF001291EF /* ContactsViewController */,
+				75CD5675283419AF001291EF /* ShareAppViewController */,
+			);
+			path = ListMembersViewController;
+			sourceTree = "<group>";
+		};
+		75CD5663283419AF001291EF /* ListMembersTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5664283419AF001291EF /* ListMembersTableViewCell.swift */,
+				75CD5665283419AF001291EF /* LIstMemberTableViewHeaderView.swift */,
+			);
+			path = ListMembersTableViewCells;
+			sourceTree = "<group>";
+		};
+		75CD566C283419AF001291EF /* ContactsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD566D283419AF001291EF /* ContactTableViewCells */,
+				75CD5673283419AF001291EF /* ContactModel.swift */,
+				75CD5671283419AF001291EF /* ContactsViewModel.swift */,
+				75CD5670283419AF001291EF /* ContactsViewController.swift */,
+				75CD5674283419AF001291EF /* ContactsViewController.storyboard */,
+			);
+			path = ContactsViewController;
+			sourceTree = "<group>";
+		};
+		75CD566D283419AF001291EF /* ContactTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				75CD566E283419AF001291EF /* ContactTableViewHeaderView.swift */,
+				75CD566F283419AF001291EF /* ContactTableViewCell.swift */,
+			);
+			path = ContactTableViewCells;
+			sourceTree = "<group>";
+		};
+		75CD5675283419AF001291EF /* ShareAppViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5678283419AF001291EF /* ShareAppViewModel.swift */,
+				75CD5677283419AF001291EF /* ShareAppViewController.swift */,
+				75CD5676283419AF001291EF /* ShareAppViewController.storyboard */,
+			);
+			path = ShareAppViewController;
+			sourceTree = "<group>";
+		};
+		75CD5679283419AF001291EF /* ListActtionsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD567A283419AF001291EF /* ListActtionsTableViewCell.swift */,
+				75CD567E283419AF001291EF /* ListActtionsModel.swift */,
+				75CD567B283419AF001291EF /* ListActionsViewModel.swift */,
+				75CD567D283419AF001291EF /* ListActtionsViewController.swift */,
+				75CD567C283419AF001291EF /* ListActtionsViewController.storyboard */,
+			);
+			path = ListActtionsViewController;
+			sourceTree = "<group>";
+		};
+		75CD567F283419AF001291EF /* DeleteProductConfirmationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5680283419AF001291EF /* DeleteProductViewModel.swift */,
+				75CD5682283419AF001291EF /* DeleteProductConfirmationViewController.swift */,
+				75CD5681283419AF001291EF /* DeleteProductConfirmationViewController.storyboard */,
+			);
+			path = DeleteProductConfirmationViewController;
+			sourceTree = "<group>";
+		};
+		75CD5683283419AF001291EF /* ChangeValueViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD5686283419AF001291EF /* ChangeValueViewModel.swift */,
+				75CD5684283419AF001291EF /* ChangeValueViewController.swift */,
+				75CD5685283419AF001291EF /* ChangeValueViewController.storyboard */,
+			);
+			path = ChangeValueViewController;
+			sourceTree = "<group>";
+		};
+		75CD5688283419AF001291EF /* AddNewProductViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD568D283419AF001291EF /* ProductViewModel.swift */,
+				75CD568C283419AF001291EF /* ProductCategoryViewModel.swift */,
+				75CD568A283419AF001291EF /* AddNewProductViewModel.swift */,
+				75CD5689283419AF001291EF /* AddNewProductViewController.swift */,
+				75CD568B283419AF001291EF /* AddNewProductViewController.storyboard */,
+			);
+			path = AddNewProductViewController;
+			sourceTree = "<group>";
+		};
 		F6E942EFE83A41418858C608 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -904,14 +1358,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CD5633283417AD001291EF /* ChangeNameViewController.storyboard in Resources */,
 				75CD548D2833D8FE001291EF /* LaunchScreen.storyboard in Resources */,
+				75CD56BA283419AF001291EF /* ContactsViewController.storyboard in Resources */,
 				75CD55F62833E92A001291EF /* SignInViewController.storyboard in Resources */,
+				75CD56BB283419AF001291EF /* ShareAppViewController.storyboard in Resources */,
 				75CD55F92833E92A001291EF /* WelcomeViewController.storyboard in Resources */,
 				75CD548A2833D8FE001291EF /* Assets.xcassets in Resources */,
+				75CD5693283419AF001291EF /* ShoppingListViewController.storyboard in Resources */,
 				75CD55FB2833E92A001291EF /* ConfirmPhoneNumberViewController.storyboard in Resources */,
+				75CD56A4283419AF001291EF /* UncheckAllViewController.storyboard in Resources */,
+				75CD56C4283419AF001291EF /* DeleteProductConfirmationViewController.storyboard in Resources */,
+				75CD56AB283419AF001291EF /* ChangeNameShoppingListViewController.storyboard in Resources */,
 				75CD55CC2833E34F001291EF /* ColorAssets.xcassets in Resources */,
+				75CD56B4283419AF001291EF /* ListMembersViewController.storyboard in Resources */,
 				75CD55882833DF97001291EF /* MainTabBarViewController.storyboard in Resources */,
+				75CD5637283417AD001291EF /* LogOutConfirmationViewController.storyboard in Resources */,
+				75CD5639283417AD001291EF /* UserProfileViewController.storyboard in Resources */,
+				75CD56A1283419AF001291EF /* ProductsListViewController.storyboard in Resources */,
 				75CD56012833E92A001291EF /* RegistrationViewController.storyboard in Resources */,
+				75CD56AA283419AF001291EF /* CartHeaderView.xib in Resources */,
+				75CD562C283417AD001291EF /* RateAppViewController.storyboard in Resources */,
+				75CD56C0283419AF001291EF /* ListActtionsViewController.storyboard in Resources */,
+				75CD569D283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.storyboard in Resources */,
+				75CD5698283419AF001291EF /* CreateShoppingListViewController.storyboard in Resources */,
+				75CD56CC283419AF001291EF /* AddNewProductViewController.storyboard in Resources */,
+				75CD5629283417AD001291EF /* ApprovedViewController.storyboard in Resources */,
+				75CD56C7283419AF001291EF /* ChangeValueViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,21 +1440,37 @@
 				75CD55F72833E92A001291EF /* SignInViewModel.swift in Sources */,
 				75CD55FD2833E92A001291EF /* WelcomeViewController.swift in Sources */,
 				75CD55272833DB2E001291EF /* CatalogCategoryEntity+CoreDataClass.swift in Sources */,
+				75CD56AC283419AF001291EF /* ChangeNameListViewModel.swift in Sources */,
+				75CD56A7283419AF001291EF /* CartHeaderView.swift in Sources */,
+				75CD5695283419AF001291EF /* ShoppingListTableViewCell.swift in Sources */,
+				75CD5690283419AF001291EF /* ShoppingListFlowRouter.swift in Sources */,
 				75CD552F2833DB2E001291EF /* UserEntity+CoreDataProperties.swift in Sources */,
+				75CD56B0283419AF001291EF /* ListMembersViewModel.swift in Sources */,
 				75CD558A2833DF97001291EF /* MainTabBarRouter.swift in Sources */,
+				75CD56B9283419AF001291EF /* ContactModel.swift in Sources */,
+				75CD56A8283419AF001291EF /* AddNewProductHeaderView.swift in Sources */,
+				75CD56BD283419AF001291EF /* ShareAppViewModel.swift in Sources */,
+				75CD56B2283419AF001291EF /* ListMemberModel.swift in Sources */,
 				75CD55352833DB2E001291EF /* GetDataRequest.swift in Sources */,
 				75CD55292833DB2E001291EF /* NotificationEntity+CoreDataClass.swift in Sources */,
 				75CD55B82833E0A1001291EF /* VisualEffectView.swift in Sources */,
 				75CD55562833DB2E001291EF /* PhoneConfirmationResponse.swift in Sources */,
+				75CD5691283419AF001291EF /* ShoppingListCollectionViewCell.swift in Sources */,
 				75CD55942833DFF3001291EF /* MesurmentFormatter+Distance.swift in Sources */,
+				75CD56CD283419AF001291EF /* ProductCategoryViewModel.swift in Sources */,
 				75CD55612833DB2E001291EF /* SynchronizationService.swift in Sources */,
 				75CD555B2833DB2E001291EF /* ShoppingListServerResponse.swift in Sources */,
+				75CD56BF283419AF001291EF /* ListActionsViewModel.swift in Sources */,
 				75CD55412833DB2E001291EF /* CheckAuthoriztionLimitRequest.swift in Sources */,
 				75CD55A52833E039001291EF /* UILabel+Rotation.swift in Sources */,
+				75CD56C9283419AF001291EF /* ProductsListViewModel.swift in Sources */,
 				75CD554C2833DB2E001291EF /* ShoppingListService.swift in Sources */,
 				75CD55422833DB2E001291EF /* ShoppingListService+Data.swift in Sources */,
+				75CD5692283419AF001291EF /* ShareListCollectionViewCell.swift in Sources */,
+				75CD562F283417AD001291EF /* UserProfileViewController.swift in Sources */,
 				75CD555F2833DB2E001291EF /* UserLoginModel.swift in Sources */,
 				75CD55332833DB2E001291EF /* UserObject.swift in Sources */,
+				75CD56BC283419AF001291EF /* ShareAppViewController.swift in Sources */,
 				75CD55C92833E10D001291EF /* UIViewController+Toast.swift in Sources */,
 				75CD54B82833DAD2001291EF /* NetworkLogger.swift in Sources */,
 				75CD55512833DB2E001291EF /* MockShoppingListService+Data.swift in Sources */,
@@ -989,14 +1478,19 @@
 				75CD552B2833DB2E001291EF /* CurrentUserEntity+CoreDataClass.swift in Sources */,
 				75CD55A32833E039001291EF /* UIView+Toast.swift in Sources */,
 				75CD552C2833DB2E001291EF /* ProductEntity+CoreDataClass.swift in Sources */,
+				75CD5634283417AD001291EF /* ApprovedNameViewModel.swift in Sources */,
 				75CD55582833DB2E001291EF /* UserRegisterRequest.swift in Sources */,
 				75CD553A2833DB2E001291EF /* SendDataObject.swift in Sources */,
 				75CD55792833DB4C001291EF /* ContactsManager.swift in Sources */,
 				75CD551D2833DB2E001291EF /* MappingModelV5toV6.xcmappingmodel in Sources */,
+				75CD562E283417AD001291EF /* UserProfileFlowRouter.swift in Sources */,
 				75CD55C62833E10D001291EF /* UIStoryboard+UIViewController.swift in Sources */,
+				75CD562D283417AD001291EF /* RateAppViewModel.swift in Sources */,
 				75CD55532833DB2E001291EF /* PhoneConfirmationModel.swift in Sources */,
+				75CD56CA283419AF001291EF /* AddNewProductViewController.swift in Sources */,
 				75CD55A92833E039001291EF /* UIColor+ShoppingLIstCollors.swift in Sources */,
 				75CD54A62833DA9C001291EF /* Signal.swift in Sources */,
+				75CD56C1283419AF001291EF /* ListActtionsViewController.swift in Sources */,
 				75CD55202833DB2E001291EF /* CurrentUserEntity+CoreDataProperties.swift in Sources */,
 				75CD554E2833DB2E001291EF /* GetUserResponse.swift in Sources */,
 				75CD55F52833E92A001291EF /* WelcomeFlowRouter.swift in Sources */,
@@ -1007,27 +1501,46 @@
 				75CD55A72833E039001291EF /* UIView+Attributes.swift in Sources */,
 				75CD54A72833DA9C001291EF /* Listener.swift in Sources */,
 				75CD54B62833DAD2001291EF /* LoggingURLProtocol.swift in Sources */,
+				75CD5697283419AF001291EF /* ShoppingListModel.swift in Sources */,
+				75CD56C8283419AF001291EF /* ChangeValueViewModel.swift in Sources */,
+				75CD56CE283419AF001291EF /* ProductViewModel.swift in Sources */,
+				75CD56A6283419AF001291EF /* CheckableProductListTableViewCell.swift in Sources */,
 				75CD55742833DB4C001291EF /* CurrentTimeManager.swift in Sources */,
 				75CD55382833DB2E001291EF /* ShareObject.swift in Sources */,
+				75CD56B5283419AF001291EF /* ContactTableViewHeaderView.swift in Sources */,
 				75CD54B52833DAD2001291EF /* RequestResponseDefaultLogger.swift in Sources */,
+				75CD5630283417AD001291EF /* UserProfileViewModel.swift in Sources */,
 				75CD55A42833E039001291EF /* UINavigationController+Completion.swift in Sources */,
 				75CD55A62833E039001291EF /* UIScrollView+Scroll.swift in Sources */,
 				75CD55B62833E0A1001291EF /* CustomePageView.swift in Sources */,
+				75CD56B8283419AF001291EF /* ContactsViewModel.swift in Sources */,
 				75CD55402833DB2E001291EF /* CheckAuthoriztionLimitResponse.swift in Sources */,
+				75CD5631283417AD001291EF /* RatingController.swift in Sources */,
 				75CD553B2833DB2E001291EF /* AcceptShareRequest.swift in Sources */,
+				75CD5696283419AF001291EF /* ShareListTableViewCell.swift in Sources */,
+				75CD5694283419AF001291EF /* GeneralModel.swift in Sources */,
 				75CD55CA2833E10D001291EF /* BaseRouter.swift in Sources */,
 				75CD554A2833DB2E001291EF /* CheckRegistrationResponse.swift in Sources */,
+				75CD569C283419AF001291EF /* DeleteShoppingListViewModel.swift in Sources */,
+				75CD569F283419AF001291EF /* ShoppingListViewController.swift in Sources */,
 				75CD549E2833DA62001291EF /* NameDescribable.swift in Sources */,
 				75CD55372833DB2E001291EF /* ListObject.swift in Sources */,
 				75CD55302833DB2E001291EF /* ShoppingListEntity+CoreDataClass.swift in Sources */,
 				75CD55C72833E10D001291EF /* UIViewController+ClassName.swift in Sources */,
+				75CD56AD283419AF001291EF /* ChangeNameShoppingListViewController.swift in Sources */,
 				75CD54B92833DAD2001291EF /* NetworkRequest.swift in Sources */,
+				75CD5632283417AD001291EF /* ChangeNameViewController.swift in Sources */,
 				75CD54A52833DA9C001291EF /* Property.swift in Sources */,
 				75CD55482833DB2E001291EF /* GetCatalogRequest.swift in Sources */,
+				75CD56AE283419AF001291EF /* ListMembersTableViewCell.swift in Sources */,
+				75CD56BE283419AF001291EF /* ListActtionsTableViewCell.swift in Sources */,
+				75CD5635283417AD001291EF /* ChangeNameViewModel.swift in Sources */,
 				75CD55C82833E10D001291EF /* UIViewController+Alerts.swift in Sources */,
 				75CD55592833DB2E001291EF /* UserRegisterObject.swift in Sources */,
 				75CD55392833DB2E001291EF /* CurrentUserObject.swift in Sources */,
+				75CD56A3283419AF001291EF /* UncheckAllViewController.swift in Sources */,
 				75CD557B2833DB4C001291EF /* DateFormattingManager.swift in Sources */,
+				75CD56B6283419AF001291EF /* ContactTableViewCell.swift in Sources */,
 				75CD552A2833DB2E001291EF /* ProductEntity+CoreDataProperties.swift in Sources */,
 				75CD55C32833E10D001291EF /* BaseViewController.swift in Sources */,
 				75CD54A02833DA83001291EF /* Array+Chunked.swift in Sources */,
@@ -1035,11 +1548,14 @@
 				75CD55452833DB2E001291EF /* ProductResponse.swift in Sources */,
 				75CD54962833DA19001291EF /* String+Characters.swift in Sources */,
 				75CD55462833DB2E001291EF /* CategoryResponse.swift in Sources */,
+				75CD56B3283419AF001291EF /* ListMemberCategoryModel.swift in Sources */,
 				75CD55932833DFF3001291EF /* DateTimeFormatter+Time.swift in Sources */,
+				75CD562A283417AD001291EF /* ApprovedViewController.swift in Sources */,
 				75CD55FC2833E92A001291EF /* ConfirmPhoneNumberViewModel.swift in Sources */,
 				75CD554F2833DB2E001291EF /* GetNotificationsRequest.swift in Sources */,
 				75CD55492833DB2E001291EF /* CheckRegistrationObject.swift in Sources */,
 				75CD549C2833DA57001291EF /* DebugLog.swift in Sources */,
+				75CD5636283417AD001291EF /* LogOutConfirmationViewModel.swift in Sources */,
 				75CD554B2833DB2E001291EF /* CheckRegistrationRequest.swift in Sources */,
 				75CD54B72833DAD2001291EF /* HttpMethod.swift in Sources */,
 				75CD55602833DB2E001291EF /* PushNotificationCenter.swift in Sources */,
@@ -1048,9 +1564,12 @@
 				75CD557A2833DB4C001291EF /* NotificationsManager.swift in Sources */,
 				75CD547E2833D8FC001291EF /* AppDelegate.swift in Sources */,
 				75CD55B52833E0A1001291EF /* SelfSizedTableView.swift in Sources */,
+				75CD56CF283419AF001291EF /* ProductModel.swift in Sources */,
 				75CD54B42833DAD2001291EF /* NetworkResponse.swift in Sources */,
+				75CD562B283417AD001291EF /* RateAppViewController.swift in Sources */,
 				75CD55F82833E92A001291EF /* SignInViewController.swift in Sources */,
 				75CD551C2833DB2E001291EF /* MigrationPolicyV5toV6.swift in Sources */,
+				75CD56B7283419AF001291EF /* ContactsViewController.swift in Sources */,
 				75CD554D2833DB2E001291EF /* GetUserRequest.swift in Sources */,
 				75CD55472833DB2E001291EF /* GetCatalogResponse.swift in Sources */,
 				75CD55322833DB2E001291EF /* SendDataRequest.swift in Sources */,
@@ -1058,6 +1577,9 @@
 				75CD55762833DB4C001291EF /* CurrentUserManager.swift in Sources */,
 				75CD551E2833DB2E001291EF /* CoreDataService.swift in Sources */,
 				75CD551B2833DB2E001291EF /* KeychainService.swift in Sources */,
+				75CD5638283417AD001291EF /* LogOutConfirmationViewController.swift in Sources */,
+				75CD56A0283419AF001291EF /* ShareModel.swift in Sources */,
+				75CD56C6283419AF001291EF /* ChangeValueViewController.swift in Sources */,
 				75CD55312833DB2E001291EF /* NotificationEntity+CoreDataProperties.swift in Sources */,
 				75CD555C2833DB2E001291EF /* ShoppingListService+Notifications.swift in Sources */,
 				75CD555D2833DB2E001291EF /* UserLoginRequest.swift in Sources */,
@@ -1071,28 +1593,42 @@
 				75CD55212833DB2E001291EF /* UserEntity+CoreDataClass.swift in Sources */,
 				75CD55782833DB4C001291EF /* SharesManager.swift in Sources */,
 				75CD55232833DB2E001291EF /* TemplateListEntity+CoreDataProperties.swift in Sources */,
+				75CD56C3283419AF001291EF /* DeleteProductViewModel.swift in Sources */,
+				75CD569B283419AF001291EF /* ShoppingListViewModel.swift in Sources */,
 				75CD55572833DB2E001291EF /* UserResponseObject.swift in Sources */,
 				75CD55AB2833E039001291EF /* UITableView+Scroll.swift in Sources */,
 				75CD55752833DB4C001291EF /* CurrentUserModel.swift in Sources */,
 				75CD55432833DB2E001291EF /* ShoppingListService+Catalog.swift in Sources */,
+				75CD569E283419AF001291EF /* DeleteShoppingLIstConfirmationViewController.swift in Sources */,
+				75CD56C5283419AF001291EF /* DeleteProductConfirmationViewController.swift in Sources */,
 				75CD55AC2833E039001291EF /* UILabel+Spacing.swift in Sources */,
 				75CD55892833DF97001291EF /* MainTabBarViewModel.swift in Sources */,
 				75CD55772833DB4C001291EF /* PhoneNumberManager.swift in Sources */,
+				75CD56C2283419AF001291EF /* ListActtionsModel.swift in Sources */,
 				75CD55342833DB2E001291EF /* GetDataObject.swift in Sources */,
 				75CD56022833E92A001291EF /* RegistrationViewModel.swift in Sources */,
 				75CD55242833DB2E001291EF /* CatalogCategoryEntity+CoreDataProperties.swift in Sources */,
 				75CD54B32833DAD2001291EF /* NetworkClient.swift in Sources */,
+				75CD56AF283419AF001291EF /* LIstMemberTableViewHeaderView.swift in Sources */,
 				75CD558B2833DF97001291EF /* MainTabBarViewController.swift in Sources */,
 				75CD551F2833DB2E001291EF /* ShoppingListCoreData.xcdatamodeld in Sources */,
 				75CD552D2833DB2E001291EF /* ShareEntity+CoreDataProperties.swift in Sources */,
 				75CD55282833DB2E001291EF /* ShoppingListEntity+CoreDataProperties.swift in Sources */,
+				75CD56D0283419AF001291EF /* ProductsListFlowRouter.swift in Sources */,
 				75CD55252833DB2E001291EF /* CatalogProductEntity+CoreDataProperties.swift in Sources */,
 				75CD54982833DA38001291EF /* String+NSRange.swift in Sources */,
+				75CD56A5283419AF001291EF /* UncheckAllViewModel.swift in Sources */,
 				75CD55922833DFF3001291EF /* DateTimeFormatter+Day.swift in Sources */,
 				75CD549A2833DA47001291EF /* String+FormatPhone.swift in Sources */,
+				75CD56A9283419AF001291EF /* AddNewProductTableViewCell.swift in Sources */,
+				75CD56B1283419AF001291EF /* ListMembersViewController.swift in Sources */,
 				75CD553C2833DB2E001291EF /* AcceptShareResposne.swift in Sources */,
+				75CD56A2283419AF001291EF /* ProductsListViewController.swift in Sources */,
 				75CD55542833DB2E001291EF /* PhoneConfirmationRequest.swift in Sources */,
+				75CD56CB283419AF001291EF /* AddNewProductViewModel.swift in Sources */,
 				75CD54A92833DABF001291EF /* String+Validation.swift in Sources */,
+				75CD5699283419AF001291EF /* CreateShoppingListViewModel.swift in Sources */,
+				75CD569A283419AF001291EF /* CreateShoppingListViewController.swift in Sources */,
 				75CD55502833DB2E001291EF /* GetNotificationsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

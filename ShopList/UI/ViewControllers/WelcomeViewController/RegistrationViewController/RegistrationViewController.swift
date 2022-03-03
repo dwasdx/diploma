@@ -5,7 +5,6 @@ protocol RegistrationViewControllerRouting: BaseRouting {
     func presentWelcomeViewController(_ completion: (() -> Void)?)
     func presentConfirmRegistrationViewController(phoneNumber: String, _ completion: (() -> Void)?)
     func presentSignInViewController(_ completion: (() -> Void)?)
-    func presentConfidentialityAgreementViewController(_ completion: (() -> Void)?)
 }
 
 protocol RegistrationViewModeling: BaseViewModeling {
@@ -259,19 +258,6 @@ extension RegistrationViewController {
             update()
         }
     }
-}
-
-extension RegistrationViewController: UITextViewDelegate {
-    
-    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-        
-        if URL.absoluteString == "agreementTapped" {
-            router?.presentConfidentialityAgreementViewController(nil)
-        }
-        
-        return false
-    }
-    
 }
 
 extension RegistrationViewController: UIGestureRecognizerDelegate {
