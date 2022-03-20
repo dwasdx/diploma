@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oxo-Zo-2gf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Log Out Confirmation View Controller-->
+        <scene sceneID="pTL-3D-HBr">
+            <objects>
+                <viewController id="Oxo-Zo-2gf" customClass="LogOutConfirmationViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vrv-yo-Las">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udB-IJ-364" customClass="DesignableView" customModule="ShoppingList" customModuleProvider="target">
+                                <rect key="frame" x="24" y="336.5" width="366" height="223.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="0TC-1C-f0a">
+                                        <rect key="frame" x="24" y="143.5" width="318" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRa-YV-arA" customClass="DesignableButton" customModule="ShoppingList" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="147" height="48"/>
+                                                <color key="backgroundColor" name="shoppinglist.orange"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <state key="normal" title="Отмена">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <point key="value" x="0.0" y="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="shoppinglist.shadow.green"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="Oxo-Zo-2gf" eventType="touchUpInside" id="zhD-IE-b45"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ca-yL-lO9" customClass="DesignableButton" customModule="ShoppingList" customModuleProvider="target">
+                                                <rect key="frame" x="171" y="0.0" width="147" height="48"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <state key="normal" title="Выйти">
+                                                    <color key="titleColor" name="shoppinglist.red"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <point key="value" x="0.0" y="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="shoppinglist.shadow.black"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="LogOutTapped:" destination="Oxo-Zo-2gf" eventType="touchUpInside" id="Poa-BV-yra"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="P5k-Ch-xRo"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Внимание" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-1S-Hpq">
+                                        <rect key="frame" x="24" y="32" width="318" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                        <color key="textColor" name="shoppinglist.text.black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы действительно хотите выйти?  Несохраненные данные будут удалены безвозвратно." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCA-Zg-SOU">
+                                        <rect key="frame" x="24" y="71.5" width="318" height="56"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" name="shoppinglist.text.gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0TC-1C-f0a" secondAttribute="trailing" constant="24" id="2c8-At-R0x"/>
+                                    <constraint firstItem="0TC-1C-f0a" firstAttribute="top" secondItem="iCA-Zg-SOU" secondAttribute="bottom" constant="16" id="4QL-eW-tIm"/>
+                                    <constraint firstAttribute="trailing" secondItem="dmg-1S-Hpq" secondAttribute="trailing" constant="24" id="Bnq-1H-Byu"/>
+                                    <constraint firstItem="iCA-Zg-SOU" firstAttribute="leading" secondItem="udB-IJ-364" secondAttribute="leading" constant="24" id="HHG-6d-YUS"/>
+                                    <constraint firstItem="iCA-Zg-SOU" firstAttribute="top" secondItem="dmg-1S-Hpq" secondAttribute="bottom" constant="16" id="Xtc-Kn-0LL"/>
+                                    <constraint firstItem="dmg-1S-Hpq" firstAttribute="leading" secondItem="udB-IJ-364" secondAttribute="leading" constant="24" id="cZm-Qq-IPi"/>
+                                    <constraint firstItem="dmg-1S-Hpq" firstAttribute="top" secondItem="udB-IJ-364" secondAttribute="top" constant="32" id="eaq-rY-pOc"/>
+                                    <constraint firstAttribute="bottom" secondItem="0TC-1C-f0a" secondAttribute="bottom" constant="32" id="jGj-hO-hwU"/>
+                                    <constraint firstAttribute="trailing" secondItem="iCA-Zg-SOU" secondAttribute="trailing" constant="24" id="s8m-lW-7DH"/>
+                                    <constraint firstItem="0TC-1C-f0a" firstAttribute="leading" secondItem="udB-IJ-364" secondAttribute="leading" constant="24" id="xuH-yd-5e8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Ttv-aN-svK">
+                                <rect key="frame" x="197" y="494" width="20" height="20"/>
+                                <color key="color" name="shoppinglist.orange"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3yK-2Z-OaT"/>
+                        <color key="backgroundColor" name="shoppinglist.black.transparent"/>
+                        <constraints>
+                            <constraint firstItem="udB-IJ-364" firstAttribute="centerY" secondItem="vrv-yo-Las" secondAttribute="centerY" id="AN4-dk-EzY"/>
+                            <constraint firstItem="udB-IJ-364" firstAttribute="leading" secondItem="3yK-2Z-OaT" secondAttribute="leading" constant="24" id="Aqg-8D-PIh"/>
+                            <constraint firstItem="Ttv-aN-svK" firstAttribute="centerX" secondItem="0TC-1C-f0a" secondAttribute="centerX" id="Bmi-TC-prY"/>
+                            <constraint firstItem="Ttv-aN-svK" firstAttribute="centerY" secondItem="0TC-1C-f0a" secondAttribute="centerY" id="V30-fZ-jR2"/>
+                            <constraint firstItem="udB-IJ-364" firstAttribute="centerX" secondItem="vrv-yo-Las" secondAttribute="centerX" id="a8c-NO-I7X"/>
+                            <constraint firstItem="3yK-2Z-OaT" firstAttribute="trailing" secondItem="udB-IJ-364" secondAttribute="trailing" constant="24" id="vDo-zT-zAt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonsStackView" destination="0TC-1C-f0a" id="aee-fj-Dty"/>
+                        <outlet property="loadingIndicator" destination="Ttv-aN-svK" id="90t-as-FX9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c23-AV-fou" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="-63"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="2ca-yL-lO9">
+            <size key="intrinsicContentSize" width="48" height="31"/>
+        </designable>
+        <designable name="BRa-YV-arA">
+            <size key="intrinsicContentSize" width="57" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="shoppinglist.black.transparent">
+            <color red="0.043137254901960784" green="0.039215686274509803" blue="0.070588235294117646" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.orange">
+            <color red="1" green="0.70196078431372544" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.red">
+            <color red="0.92156862745098034" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.shadow.black">
+            <color red="0.13725490196078433" green="0.13333333333333333" blue="0.34901960784313724" alpha="0.15999999642372131" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.shadow.green">
+            <color red="0.34901960784313724" green="0.32549019607843138" blue="0.13333333333333333" alpha="0.15999999642372131" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.text.black">
+            <color red="0.054901960784313725" green="0.039215686274509803" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shoppinglist.text.gray">
+            <color red="0.59215686274509804" green="0.60784313725490191" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
