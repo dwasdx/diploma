@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CatalogCategoryEntity" representedClassName="CatalogCategoryEntity" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CatalogProductEntity" inverseName="category" inverseEntity="CatalogProductEntity"/>
+    </entity>
+    <entity name="CatalogProductEntity" representedClassName="CatalogProductEntity" syncable="YES">
+        <attribute name="categoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CatalogCategoryEntity" inverseName="products" inverseEntity="CatalogCategoryEntity"/>
+    </entity>
+    <entity name="CurrentUserEntity" representedClassName="CurrentUserEntity" syncable="YES">
+        <attribute name="createdAt" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="emailApproved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="isActivated" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isdeleted" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="phone" attributeType="String"/>
+        <attribute name="updatedAt" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="NotificationEntity" representedClassName="NotificationEntity" syncable="YES">
+        <attribute name="createdAt" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="message" attributeType="String"/>
+    </entity>
+    <entity name="ProductEntity" representedClassName="ProductEntity" syncable="YES">
+        <attribute name="categoryName" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="isdeleted" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isMarked" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="listId" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="updatedAt" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userMarkedId" optional="YES" attributeType="String"/>
+        <attribute name="value" attributeType="String"/>
+    </entity>
+    <entity name="ShareEntity" representedClassName="ShareEntity" syncable="YES">
+        <attribute name="createdAt" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="isdeleted" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="listId" attributeType="String"/>
+        <attribute name="ownerId" attributeType="String"/>
+        <attribute name="status" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="toUserId" attributeType="String"/>
+        <attribute name="updatedAt" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ShoppingListEntity" representedClassName=".ShoppingListEntity" syncable="YES">
+        <attribute name="acceptedSharesCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkedProductsNumber" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdAt" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="hasChange" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="isdeleted" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="ownerId" attributeType="String"/>
+        <attribute name="positionOnScreen" attributeType="Integer 32" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="productsNumber" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="toBePresented" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="updatedAt" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES">
+        <attribute name="id" attributeType="String"/>
+        <attribute name="phone" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="phoneString" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CatalogCategoryEntity" positionX="-567.10546875" positionY="-193.375" width="128" height="118"/>
+        <element name="CatalogProductEntity" positionX="-577.140625" positionY="13.98828125" width="128" height="133"/>
+        <element name="CurrentUserEntity" positionX="-261.3828125" positionY="-236.609375" width="128" height="178"/>
+        <element name="NotificationEntity" positionX="-266.97265625" positionY="209.88671875" width="128" height="88"/>
+        <element name="ProductEntity" positionX="-263.796875" positionY="7.54296875" width="128" height="193"/>
+        <element name="ShareEntity" positionX="-414.77734375" positionY="102.09765625" width="128" height="163"/>
+        <element name="ShoppingListEntity" positionX="-415.53515625" positionY="-50.8671875" width="128" height="223"/>
+        <element name="UserEntity" positionX="-412.2890625" positionY="-237.15234375" width="128" height="88"/>
+    </elements>
+</model>
