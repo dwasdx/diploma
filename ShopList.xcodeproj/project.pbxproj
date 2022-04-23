@@ -32,17 +32,14 @@
 		75CD551C2833DB2E001291EF /* MigrationPolicyV5toV6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54C02833DB2E001291EF /* MigrationPolicyV5toV6.swift */; };
 		75CD551D2833DB2E001291EF /* MappingModelV5toV6.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54C12833DB2E001291EF /* MappingModelV5toV6.xcmappingmodel */; };
 		75CD551E2833DB2E001291EF /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54C22833DB2E001291EF /* CoreDataService.swift */; };
-		75CD551F2833DB2E001291EF /* ShoppingListCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54C32833DB2E001291EF /* ShoppingListCoreData.xcdatamodeld */; };
+		75CD551F2833DB2E001291EF /* ShoppListCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54C32833DB2E001291EF /* ShoppListCoreData.xcdatamodeld */; };
 		75CD55202833DB2E001291EF /* CurrentUserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54CB2833DB2E001291EF /* CurrentUserEntity+CoreDataProperties.swift */; };
 		75CD55212833DB2E001291EF /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54CC2833DB2E001291EF /* UserEntity+CoreDataClass.swift */; };
 		75CD55222833DB2E001291EF /* ShareEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54CD2833DB2E001291EF /* ShareEntity+CoreDataClass.swift */; };
-		75CD55232833DB2E001291EF /* TemplateListEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54CE2833DB2E001291EF /* TemplateListEntity+CoreDataProperties.swift */; };
 		75CD55242833DB2E001291EF /* CatalogCategoryEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54CF2833DB2E001291EF /* CatalogCategoryEntity+CoreDataProperties.swift */; };
 		75CD55252833DB2E001291EF /* CatalogProductEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54D02833DB2E001291EF /* CatalogProductEntity+CoreDataProperties.swift */; };
-		75CD55262833DB2E001291EF /* TemplateListEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54D12833DB2E001291EF /* TemplateListEntity+CoreDataClass.swift */; };
 		75CD55272833DB2E001291EF /* CatalogCategoryEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54D22833DB2E001291EF /* CatalogCategoryEntity+CoreDataClass.swift */; };
 		75CD55282833DB2E001291EF /* ShoppingListEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54D32833DB2E001291EF /* ShoppingListEntity+CoreDataProperties.swift */; };
-		75CD55292833DB2E001291EF /* NotificationEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54D42833DB2E001291EF /* NotificationEntity+CoreDataClass.swift */; };
 		75CD552A2833DB2E001291EF /* ProductEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54D52833DB2E001291EF /* ProductEntity+CoreDataProperties.swift */; };
 		75CD552B2833DB2E001291EF /* CurrentUserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54D62833DB2E001291EF /* CurrentUserEntity+CoreDataClass.swift */; };
 		75CD552C2833DB2E001291EF /* ProductEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54D72833DB2E001291EF /* ProductEntity+CoreDataClass.swift */; };
@@ -50,7 +47,6 @@
 		75CD552E2833DB2E001291EF /* CatalogProductEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54D92833DB2E001291EF /* CatalogProductEntity+CoreDataClass.swift */; };
 		75CD552F2833DB2E001291EF /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54DA2833DB2E001291EF /* UserEntity+CoreDataProperties.swift */; };
 		75CD55302833DB2E001291EF /* ShoppingListEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54DB2833DB2E001291EF /* ShoppingListEntity+CoreDataClass.swift */; };
-		75CD55312833DB2E001291EF /* NotificationEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54DC2833DB2E001291EF /* NotificationEntity+CoreDataProperties.swift */; };
 		75CD55322833DB2E001291EF /* SendDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54DF2833DB2E001291EF /* SendDataRequest.swift */; };
 		75CD55332833DB2E001291EF /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54E02833DB2E001291EF /* UserObject.swift */; };
 		75CD55342833DB2E001291EF /* GetDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD54E12833DB2E001291EF /* GetDataObject.swift */; };
@@ -88,7 +84,6 @@
 		75CD55592833DB2E001291EF /* UserRegisterObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD550F2833DB2E001291EF /* UserRegisterObject.swift */; };
 		75CD555A2833DB2E001291EF /* MockShoppingListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55102833DB2E001291EF /* MockShoppingListService.swift */; };
 		75CD555B2833DB2E001291EF /* ShoppingListServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55112833DB2E001291EF /* ShoppingListServerResponse.swift */; };
-		75CD555C2833DB2E001291EF /* ShoppingListService+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55122833DB2E001291EF /* ShoppingListService+Notifications.swift */; };
 		75CD555D2833DB2E001291EF /* UserLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55142833DB2E001291EF /* UserLoginRequest.swift */; };
 		75CD555E2833DB2E001291EF /* UserLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55152833DB2E001291EF /* UserLoginResponse.swift */; };
 		75CD555F2833DB2E001291EF /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55162833DB2E001291EF /* UserLoginModel.swift */; };
@@ -100,7 +95,6 @@
 		75CD55772833DB4C001291EF /* PhoneNumberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55692833DB4C001291EF /* PhoneNumberManager.swift */; };
 		75CD55782833DB4C001291EF /* SharesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD556B2833DB4C001291EF /* SharesManager.swift */; };
 		75CD55792833DB4C001291EF /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD556D2833DB4C001291EF /* ContactsManager.swift */; };
-		75CD557A2833DB4C001291EF /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD556F2833DB4C001291EF /* NotificationsManager.swift */; };
 		75CD557B2833DB4C001291EF /* DateFormattingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55712833DB4C001291EF /* DateFormattingManager.swift */; };
 		75CD55882833DF97001291EF /* MainTabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD55822833DF97001291EF /* MainTabBarViewController.storyboard */; };
 		75CD55892833DF97001291EF /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55832833DF97001291EF /* MainTabBarViewModel.swift */; };
@@ -227,6 +221,9 @@
 		75CD56CE283419AF001291EF /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD568D283419AF001291EF /* ProductViewModel.swift */; };
 		75CD56CF283419AF001291EF /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD568E283419AF001291EF /* ProductModel.swift */; };
 		75CD56D0283419AF001291EF /* ProductsListFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD568F283419AF001291EF /* ProductsListFlowRouter.swift */; };
+		75CD56D228341FF0001291EF /* UIImage+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD56D128341FF0001291EF /* UIImage+Image.swift */; };
+		75CD56D6283420AF001291EF /* CleanViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CD56D4283420AF001291EF /* CleanViewController.storyboard */; };
+		75CD56D7283420AF001291EF /* CleanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD56D5283420AF001291EF /* CleanViewController.swift */; };
 		A2CDE33EA2ABA2EB445847BC /* Pods_ShopList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F09589BAC5043FC40F347B /* Pods_ShopList.framework */; };
 /* End PBXBuildFile section */
 
@@ -270,13 +267,10 @@
 		75CD54CB2833DB2E001291EF /* CurrentUserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrentUserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		75CD54CC2833DB2E001291EF /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		75CD54CD2833DB2E001291EF /* ShareEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		75CD54CE2833DB2E001291EF /* TemplateListEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TemplateListEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		75CD54CF2833DB2E001291EF /* CatalogCategoryEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CatalogCategoryEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		75CD54D02833DB2E001291EF /* CatalogProductEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CatalogProductEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		75CD54D12833DB2E001291EF /* TemplateListEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TemplateListEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		75CD54D22833DB2E001291EF /* CatalogCategoryEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CatalogCategoryEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		75CD54D32833DB2E001291EF /* ShoppingListEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingListEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		75CD54D42833DB2E001291EF /* NotificationEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		75CD54D52833DB2E001291EF /* ProductEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		75CD54D62833DB2E001291EF /* CurrentUserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrentUserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		75CD54D72833DB2E001291EF /* ProductEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -284,7 +278,6 @@
 		75CD54D92833DB2E001291EF /* CatalogProductEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CatalogProductEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		75CD54DA2833DB2E001291EF /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		75CD54DB2833DB2E001291EF /* ShoppingListEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingListEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		75CD54DC2833DB2E001291EF /* NotificationEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		75CD54DF2833DB2E001291EF /* SendDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendDataRequest.swift; sourceTree = "<group>"; };
 		75CD54E02833DB2E001291EF /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		75CD54E12833DB2E001291EF /* GetDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDataObject.swift; sourceTree = "<group>"; };
@@ -322,7 +315,6 @@
 		75CD550F2833DB2E001291EF /* UserRegisterObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegisterObject.swift; sourceTree = "<group>"; };
 		75CD55102833DB2E001291EF /* MockShoppingListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockShoppingListService.swift; sourceTree = "<group>"; };
 		75CD55112833DB2E001291EF /* ShoppingListServerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListServerResponse.swift; sourceTree = "<group>"; };
-		75CD55122833DB2E001291EF /* ShoppingListService+Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingListService+Notifications.swift"; sourceTree = "<group>"; };
 		75CD55142833DB2E001291EF /* UserLoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginRequest.swift; sourceTree = "<group>"; };
 		75CD55152833DB2E001291EF /* UserLoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginResponse.swift; sourceTree = "<group>"; };
 		75CD55162833DB2E001291EF /* UserLoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginModel.swift; sourceTree = "<group>"; };
@@ -334,7 +326,6 @@
 		75CD55692833DB4C001291EF /* PhoneNumberManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberManager.swift; sourceTree = "<group>"; };
 		75CD556B2833DB4C001291EF /* SharesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharesManager.swift; sourceTree = "<group>"; };
 		75CD556D2833DB4C001291EF /* ContactsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
-		75CD556F2833DB4C001291EF /* NotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 		75CD55712833DB4C001291EF /* DateFormattingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormattingManager.swift; sourceTree = "<group>"; };
 		75CD55822833DF97001291EF /* MainTabBarViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTabBarViewController.storyboard; sourceTree = "<group>"; };
 		75CD55832833DF97001291EF /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
@@ -461,6 +452,9 @@
 		75CD568D283419AF001291EF /* ProductViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		75CD568E283419AF001291EF /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		75CD568F283419AF001291EF /* ProductsListFlowRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListFlowRouter.swift; sourceTree = "<group>"; };
+		75CD56D128341FF0001291EF /* UIImage+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Image.swift"; sourceTree = "<group>"; };
+		75CD56D4283420AF001291EF /* CleanViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CleanViewController.storyboard; sourceTree = "<group>"; };
+		75CD56D5283420AF001291EF /* CleanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -588,7 +582,7 @@
 			isa = PBXGroup;
 			children = (
 				75CD54C22833DB2E001291EF /* CoreDataService.swift */,
-				75CD54C32833DB2E001291EF /* ShoppingListCoreData.xcdatamodeld */,
+				75CD54C32833DB2E001291EF /* ShoppListCoreData.xcdatamodeld */,
 				75CD54BE2833DB2E001291EF /* Migrations */,
 				75CD54CA2833DB2E001291EF /* Entities */,
 			);
@@ -618,13 +612,10 @@
 				75CD54CB2833DB2E001291EF /* CurrentUserEntity+CoreDataProperties.swift */,
 				75CD54CC2833DB2E001291EF /* UserEntity+CoreDataClass.swift */,
 				75CD54CD2833DB2E001291EF /* ShareEntity+CoreDataClass.swift */,
-				75CD54CE2833DB2E001291EF /* TemplateListEntity+CoreDataProperties.swift */,
 				75CD54CF2833DB2E001291EF /* CatalogCategoryEntity+CoreDataProperties.swift */,
 				75CD54D02833DB2E001291EF /* CatalogProductEntity+CoreDataProperties.swift */,
-				75CD54D12833DB2E001291EF /* TemplateListEntity+CoreDataClass.swift */,
 				75CD54D22833DB2E001291EF /* CatalogCategoryEntity+CoreDataClass.swift */,
 				75CD54D32833DB2E001291EF /* ShoppingListEntity+CoreDataProperties.swift */,
-				75CD54D42833DB2E001291EF /* NotificationEntity+CoreDataClass.swift */,
 				75CD54D52833DB2E001291EF /* ProductEntity+CoreDataProperties.swift */,
 				75CD54D62833DB2E001291EF /* CurrentUserEntity+CoreDataClass.swift */,
 				75CD54D72833DB2E001291EF /* ProductEntity+CoreDataClass.swift */,
@@ -632,7 +623,6 @@
 				75CD54D92833DB2E001291EF /* CatalogProductEntity+CoreDataClass.swift */,
 				75CD54DA2833DB2E001291EF /* UserEntity+CoreDataProperties.swift */,
 				75CD54DB2833DB2E001291EF /* ShoppingListEntity+CoreDataClass.swift */,
-				75CD54DC2833DB2E001291EF /* NotificationEntity+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -656,7 +646,6 @@
 				75CD55052833DB2E001291EF /* MockShoppingListService+Data.swift */,
 				75CD55102833DB2E001291EF /* MockShoppingListService.swift */,
 				75CD55112833DB2E001291EF /* ShoppingListServerResponse.swift */,
-				75CD55122833DB2E001291EF /* ShoppingListService+Notifications.swift */,
 			);
 			path = ShoppingListService;
 			sourceTree = "<group>";
@@ -789,7 +778,6 @@
 				75CD55682833DB4C001291EF /* PhoneNumbersManager */,
 				75CD556A2833DB4C001291EF /* SharesManager */,
 				75CD556C2833DB4C001291EF /* ContactsManager */,
-				75CD556E2833DB4C001291EF /* NotificationsManager */,
 				75CD55702833DB4C001291EF /* DateFormattingManager */,
 			);
 			path = Managers;
@@ -836,14 +824,6 @@
 			path = ContactsManager;
 			sourceTree = "<group>";
 		};
-		75CD556E2833DB4C001291EF /* NotificationsManager */ = {
-			isa = PBXGroup;
-			children = (
-				75CD556F2833DB4C001291EF /* NotificationsManager.swift */,
-			);
-			path = NotificationsManager;
-			sourceTree = "<group>";
-		};
 		75CD55702833DB4C001291EF /* DateFormattingManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -868,6 +848,7 @@
 		75CD557E2833DF97001291EF /* MainTabBarViewController */ = {
 			isa = PBXGroup;
 			children = (
+				75CD56D3283420AF001291EF /* CleanViewController */,
 				75CD55822833DF97001291EF /* MainTabBarViewController.storyboard */,
 				75CD55832833DF97001291EF /* MainTabBarViewModel.swift */,
 				75CD55842833DF97001291EF /* MainTabBarRouter.swift */,
@@ -920,6 +901,7 @@
 				75CD559F2833E039001291EF /* UITextField+Attributes.swift */,
 				75CD55A02833E039001291EF /* UITableView+Scroll.swift */,
 				75CD55A12833E039001291EF /* UILabel+Spacing.swift */,
+				75CD56D128341FF0001291EF /* UIImage+Image.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1289,6 +1271,15 @@
 			path = AddNewProductViewController;
 			sourceTree = "<group>";
 		};
+		75CD56D3283420AF001291EF /* CleanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75CD56D4283420AF001291EF /* CleanViewController.storyboard */,
+				75CD56D5283420AF001291EF /* CleanViewController.swift */,
+			);
+			path = CleanViewController;
+			sourceTree = "<group>";
+		};
 		F6E942EFE83A41418858C608 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1377,6 +1368,7 @@
 				75CD5639283417AD001291EF /* UserProfileViewController.storyboard in Resources */,
 				75CD56A1283419AF001291EF /* ProductsListViewController.storyboard in Resources */,
 				75CD56012833E92A001291EF /* RegistrationViewController.storyboard in Resources */,
+				75CD56D6283420AF001291EF /* CleanViewController.storyboard in Resources */,
 				75CD56AA283419AF001291EF /* CartHeaderView.xib in Resources */,
 				75CD562C283417AD001291EF /* RateAppViewController.storyboard in Resources */,
 				75CD56C0283419AF001291EF /* ListActtionsViewController.storyboard in Resources */,
@@ -1452,7 +1444,6 @@
 				75CD56BD283419AF001291EF /* ShareAppViewModel.swift in Sources */,
 				75CD56B2283419AF001291EF /* ListMemberModel.swift in Sources */,
 				75CD55352833DB2E001291EF /* GetDataRequest.swift in Sources */,
-				75CD55292833DB2E001291EF /* NotificationEntity+CoreDataClass.swift in Sources */,
 				75CD55B82833E0A1001291EF /* VisualEffectView.swift in Sources */,
 				75CD55562833DB2E001291EF /* PhoneConfirmationResponse.swift in Sources */,
 				75CD5691283419AF001291EF /* ShoppingListCollectionViewCell.swift in Sources */,
@@ -1494,7 +1485,6 @@
 				75CD55202833DB2E001291EF /* CurrentUserEntity+CoreDataProperties.swift in Sources */,
 				75CD554E2833DB2E001291EF /* GetUserResponse.swift in Sources */,
 				75CD55F52833E92A001291EF /* WelcomeFlowRouter.swift in Sources */,
-				75CD55262833DB2E001291EF /* TemplateListEntity+CoreDataClass.swift in Sources */,
 				75CD555A2833DB2E001291EF /* MockShoppingListService.swift in Sources */,
 				75CD55442833DB2E001291EF /* ShoppingLIstService+User.swift in Sources */,
 				75CD552E2833DB2E001291EF /* CatalogProductEntity+CoreDataClass.swift in Sources */,
@@ -1561,8 +1551,8 @@
 				75CD55602833DB2E001291EF /* PushNotificationCenter.swift in Sources */,
 				75CD55362833DB2E001291EF /* ItemObject.swift in Sources */,
 				75CD55AA2833E039001291EF /* UITextField+Attributes.swift in Sources */,
-				75CD557A2833DB4C001291EF /* NotificationsManager.swift in Sources */,
 				75CD547E2833D8FC001291EF /* AppDelegate.swift in Sources */,
+				75CD56D228341FF0001291EF /* UIImage+Image.swift in Sources */,
 				75CD55B52833E0A1001291EF /* SelfSizedTableView.swift in Sources */,
 				75CD56CF283419AF001291EF /* ProductModel.swift in Sources */,
 				75CD54B42833DAD2001291EF /* NetworkResponse.swift in Sources */,
@@ -1580,8 +1570,6 @@
 				75CD5638283417AD001291EF /* LogOutConfirmationViewController.swift in Sources */,
 				75CD56A0283419AF001291EF /* ShareModel.swift in Sources */,
 				75CD56C6283419AF001291EF /* ChangeValueViewController.swift in Sources */,
-				75CD55312833DB2E001291EF /* NotificationEntity+CoreDataProperties.swift in Sources */,
-				75CD555C2833DB2E001291EF /* ShoppingListService+Notifications.swift in Sources */,
 				75CD555D2833DB2E001291EF /* UserLoginRequest.swift in Sources */,
 				75CD54802833D8FC001291EF /* SceneDelegate.swift in Sources */,
 				75CD55B42833E0A1001291EF /* SwipeableViewController.swift in Sources */,
@@ -1592,7 +1580,6 @@
 				75CD55A82833E039001291EF /* UITextView+Attributes.swift in Sources */,
 				75CD55212833DB2E001291EF /* UserEntity+CoreDataClass.swift in Sources */,
 				75CD55782833DB4C001291EF /* SharesManager.swift in Sources */,
-				75CD55232833DB2E001291EF /* TemplateListEntity+CoreDataProperties.swift in Sources */,
 				75CD56C3283419AF001291EF /* DeleteProductViewModel.swift in Sources */,
 				75CD569B283419AF001291EF /* ShoppingListViewModel.swift in Sources */,
 				75CD55572833DB2E001291EF /* UserResponseObject.swift in Sources */,
@@ -1611,7 +1598,8 @@
 				75CD54B32833DAD2001291EF /* NetworkClient.swift in Sources */,
 				75CD56AF283419AF001291EF /* LIstMemberTableViewHeaderView.swift in Sources */,
 				75CD558B2833DF97001291EF /* MainTabBarViewController.swift in Sources */,
-				75CD551F2833DB2E001291EF /* ShoppingListCoreData.xcdatamodeld in Sources */,
+				75CD551F2833DB2E001291EF /* ShoppListCoreData.xcdatamodeld in Sources */,
+				75CD56D7283420AF001291EF /* CleanViewController.swift in Sources */,
 				75CD552D2833DB2E001291EF /* ShareEntity+CoreDataProperties.swift in Sources */,
 				75CD55282833DB2E001291EF /* ShoppingListEntity+CoreDataProperties.swift in Sources */,
 				75CD56D0283419AF001291EF /* ProductsListFlowRouter.swift in Sources */,
@@ -1847,7 +1835,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		75CD54C32833DB2E001291EF /* ShoppingListCoreData.xcdatamodeld */ = {
+		75CD54C32833DB2E001291EF /* ShoppListCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				75CD54C42833DB2E001291EF /* ShoppingListCoreData.v5.xcdatamodel */,
@@ -1858,7 +1846,7 @@
 				75CD54C92833DB2E001291EF /* ShoppingListCoreData.v2.xcdatamodel */,
 			);
 			currentVersion = 75CD54C62833DB2E001291EF /* ShoppingListCoreData.v6.xcdatamodel */;
-			path = ShoppingListCoreData.xcdatamodeld;
+			path = ShoppListCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -39,19 +39,6 @@ class ChangeValueViewModel: BaseViewModel {
         initialize()
     }
     
-    init(parentViewModel: TemplateProductsListViewModeling,
-         indexPath: IndexPath,
-         userManager: CurrentUserManaging = CurrentUserManager.shared,
-         syncService: SynchronizationServiceable = SynchronizationService.shared) {
-        self.model = parentViewModel.getModel(at: indexPath)
-        self.indexPath = indexPath
-        self.userManager = userManager
-        self.syncService = syncService
-        super.init()
-        initialize()
-    }
-    
-    
     private func initialize() {
         if let sectionEntities = CoreDataService.shared.getEntities(entity: .catalogCategory, contextType: .view) as? [CatalogCategoryEntity] {
             self.sections = sectionEntities.map(ProductCategoryViewModel.init)

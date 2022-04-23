@@ -23,14 +23,7 @@ class MainTabBarViewModel: BaseViewModel {
         self.syncService = syncService
         super.init()
         
-        NotificationsManager.shared.hasUnreadNotifications.signal.addListener { [weak self] (state) in
-            self?.hasUnreadNotifications = state
-        }
         NotificationCenter.default.addObserver(self, selector: #selector(userDidTapNotification(_:)), name: .userDidTapNotification, object: nil)
-    }
-    
-    deinit {
-        NotificationsManager.shared.hasUnreadNotifications.signal.removeListener(unreadNotificationStateChangesToken)
     }
     
     @objc private func userDidTapNotification(_ notification: NSNotification?) {

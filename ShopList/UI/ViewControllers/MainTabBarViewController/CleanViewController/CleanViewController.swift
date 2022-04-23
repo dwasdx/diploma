@@ -1,11 +1,3 @@
-//
-//  CleanViewController.swift
-//  ShoppingList
-//
-//  Created by Илья Соловьёв on 16.12.2020.
-//  Copyright © 2020 Dmitry Lemaykin. All rights reserved.
-//
-
 import UIKit
 
 class CleanViewController: UIViewController {

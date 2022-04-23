@@ -6,7 +6,7 @@ class ContactTableViewHeaderView: UITableViewHeaderFooterView {
     
     let label: UILabel = {
         let label = UILabel()
-        label.font = .RobotoSans(.regular, size: 16)
+        label.font = .systemFont(ofSize: 16, weight: .regular)
         label.textColor = .shoppingListTextGray
         return label
     }()

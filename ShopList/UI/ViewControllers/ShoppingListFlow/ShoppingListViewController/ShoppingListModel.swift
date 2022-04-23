@@ -79,22 +79,6 @@ class ShoppingListModel: GeneralModel {
         self.hasChange = false
     }
     
-    init(templateListModel: TemplateListModel) {
-        self.ownerId = templateListModel.ownerId
-        self.name = templateListModel.name
-        self.isDeleted = templateListModel.isDeleted
-        self.createdAt = templateListModel.createdAt
-        self.updatedAt = templateListModel.updatedAt
-        self.toBePresented = templateListModel.toBePresented
-        self.isSharedList = templateListModel.isSharedList
-        self.productsNumber = templateListModel.productsNumber
-        self.checkedProductsNumber = templateListModel.checkedProductsNumber
-        self.positionOnScreen = templateListModel.positionOnScreen
-        super.init(id: templateListModel.id)
-        self.isSharedList = _isSharedList
-        self.hasChange = templateListModel.hasChange
-    }
-    
 //    init(fromServerResponse response: ListObject) {
 //        self.ownerId = response.owner_id
 //        self.name = response.name
