@@ -87,7 +87,6 @@
 		75CD555D2833DB2E001291EF /* UserLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55142833DB2E001291EF /* UserLoginRequest.swift */; };
 		75CD555E2833DB2E001291EF /* UserLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55152833DB2E001291EF /* UserLoginResponse.swift */; };
 		75CD555F2833DB2E001291EF /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55162833DB2E001291EF /* UserLoginModel.swift */; };
-		75CD55602833DB2E001291EF /* PushNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55182833DB2E001291EF /* PushNotificationCenter.swift */; };
 		75CD55612833DB2E001291EF /* SynchronizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD551A2833DB2E001291EF /* SynchronizationService.swift */; };
 		75CD55742833DB4C001291EF /* CurrentTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55642833DB4C001291EF /* CurrentTimeManager.swift */; };
 		75CD55752833DB4C001291EF /* CurrentUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD55662833DB4C001291EF /* CurrentUserModel.swift */; };
@@ -318,7 +317,6 @@
 		75CD55142833DB2E001291EF /* UserLoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginRequest.swift; sourceTree = "<group>"; };
 		75CD55152833DB2E001291EF /* UserLoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginResponse.swift; sourceTree = "<group>"; };
 		75CD55162833DB2E001291EF /* UserLoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginModel.swift; sourceTree = "<group>"; };
-		75CD55182833DB2E001291EF /* PushNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationCenter.swift; sourceTree = "<group>"; };
 		75CD551A2833DB2E001291EF /* SynchronizationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizationService.swift; sourceTree = "<group>"; };
 		75CD55642833DB4C001291EF /* CurrentTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTimeManager.swift; sourceTree = "<group>"; };
 		75CD55662833DB4C001291EF /* CurrentUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserModel.swift; sourceTree = "<group>"; };
@@ -563,7 +561,6 @@
 			children = (
 				75CD54DD2833DB2E001291EF /* ShoppingListService */,
 				75CD54BD2833DB2E001291EF /* CoreDataService */,
-				75CD55172833DB2E001291EF /* PushNotificationsCenter */,
 				75CD55192833DB2E001291EF /* SynchronizationService */,
 				75CD54BB2833DB2E001291EF /* KeychainService */,
 			);
@@ -752,14 +749,6 @@
 				75CD55162833DB2E001291EF /* UserLoginModel.swift */,
 			);
 			path = UserLoginObjects;
-			sourceTree = "<group>";
-		};
-		75CD55172833DB2E001291EF /* PushNotificationsCenter */ = {
-			isa = PBXGroup;
-			children = (
-				75CD55182833DB2E001291EF /* PushNotificationCenter.swift */,
-			);
-			path = PushNotificationsCenter;
 			sourceTree = "<group>";
 		};
 		75CD55192833DB2E001291EF /* SynchronizationService */ = {
@@ -1548,7 +1537,6 @@
 				75CD5636283417AD001291EF /* LogOutConfirmationViewModel.swift in Sources */,
 				75CD554B2833DB2E001291EF /* CheckRegistrationRequest.swift in Sources */,
 				75CD54B72833DAD2001291EF /* HttpMethod.swift in Sources */,
-				75CD55602833DB2E001291EF /* PushNotificationCenter.swift in Sources */,
 				75CD55362833DB2E001291EF /* ItemObject.swift in Sources */,
 				75CD55AA2833E039001291EF /* UITextField+Attributes.swift in Sources */,
 				75CD547E2833D8FC001291EF /* AppDelegate.swift in Sources */,

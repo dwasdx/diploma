@@ -23,30 +23,6 @@ class MainTabBarViewModel: BaseViewModel {
         self.syncService = syncService
         super.init()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(userDidTapNotification(_:)), name: .userDidTapNotification, object: nil)
-    }
-    
-    @objc private func userDidTapNotification(_ notification: NSNotification?) {
-        guard let object = notification?.object as? PushNotificationCenter.UserTappedNotificationObject else {
-            return
-        }
-        switch object.type {
-            case 1...3, 7, 8:
-                presentShoppingListViewController?()
-            case 4...6:
-                guard let token = userManager.userToken else {
-                    return
-                }
-                syncService.synchronize(token: token, fullUpdate: false) { (error) in
-                    if let error = error {
-                        print("Sync error: \(error.localizedDescription)")
-                        return
-                    }
-                    self.presentProductsListViewController?(object.listId)
-                }
-            default:
-                break
-        }
     }
 }
 

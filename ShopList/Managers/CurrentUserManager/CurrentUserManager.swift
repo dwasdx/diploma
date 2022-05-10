@@ -52,10 +52,7 @@ class CurrentUserManager: CurrentUserManaging {
             KeychainService.shared.setItem(token, forKey: "userToken")
             isLoggedIn.value = token.isEmpty == false
             UserDefaults.standard.set(isLoggedIn.value, forKey: "isLoggedIn")
-            if isLoggedIn.value == true {
-                PushNotificationCenter.shared.requestAutorization()
-//                FCMTokenManager.shared.makeSureTokenSaved()
-            }
+
         }
     }
     
