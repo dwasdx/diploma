@@ -120,7 +120,6 @@ class CurrentUserManager: CurrentUserManaging {
             self?.userToken = nil
             ShoppingListService.shared.lastSentDataTimeStamp = 0
             ShoppingListService.shared.lastGetDataTimeStamp = 0
-            NotificationsManager.shared.lastGetNotificationsTimeStampt = 0
             UserDefaults.standard.set(0, forKey: "userRating")
             
             let backgroundContext = CoreDataService.newBackgroundContext()
