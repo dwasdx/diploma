@@ -5,10 +5,8 @@ public protocol MainTabBarRouting: AnyObject, BaseRouting, PushNotificationsRout
     func reset()
     func presentWelcomeFlowRouter(_ completion: (() -> Void)?)
     
-//    var notificationsFlowRouter: NotificationsFlowRouting! { get }
     var shoppingListFlowRouter: ShoppingListFlowRouting! { get }
     var userProfileFlowRouter: UserProfileFlowRouting! { get }
-//    var templateListFlowRouter: TemplateListFlowRouting! { get }
 }
 
 protocol MainTabBarViewModeling: BaseViewModeling {
@@ -27,12 +25,6 @@ class MainTabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewModel.didChange = { [weak self] in
-            DispatchQueue.main.async {
-//                self?.update()
-            }
-        }
         viewModel.presentShoppingListViewController = { [weak self] in
             DispatchQueue.main.async { [weak self] in
                 self?.router.presentShoppingListsViewController(nil)
@@ -64,32 +56,22 @@ class MainTabBarViewController: UITabBarController {
         profileNVC.tabBarItem.title = "Профиль"
         profileNVC.tabBarItem.image = UIImage(named: "user.tabbar.grey")?.withRenderingMode(.alwaysTemplate)
         
+        let appearance = UITabBarAppearance()
+        appearance.backgroundColor = .white
+        appearance.shadowColor = .white
+        tabBar.standardAppearance = appearance
         tabBar.tintColor = .shoppingListOrange
-//        shoppingListNVC.additionalSafeAreaInsets = UIEdgeInsets(top: 0,
-//                                                                left: 0,
-//                                                                bottom: abs(topContainerBottomContentDistance),
-//                                                                right: 0)
+        
+        if #available(iOS 15.0, *) {
+            tabBar.scrollEdgeAppearance = appearance
+        }
+        
         viewControllers = [
             shoppingListNVC,
-//            router.templateListFlowRouter.navigationController,
-            
-//            router.notificationsFlowRouter.navigationController
+            profileNVC
         ]
         
     }
-    
-//    private func update() {
-//        updateNotificationsButton()
-//    }
-//
-//    private func updateNotificationsButton() {
-//
-//        //Сhecking that the notificationsViewController is not represented
-//        if selectedIndex != 2 && viewModel.hasUnreadNotifications {
-////            notificationsImageView.image = UIImage(named: "bell.notifications.grey")
-//        }
-//
-//    }
     
 }
 

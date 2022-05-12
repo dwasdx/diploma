@@ -118,7 +118,7 @@ class ShoppingListViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        // inspired by https://stackoverflow.com/questions/24341192/uirefreshcontrol-stuck-after-switching-tabs-in-uitabbarcontroller
+        super.viewWillAppear(animated)
         collectionView.refreshControl?.beginRefreshing()
         collectionView.refreshControl?.endRefreshing()
     }
@@ -132,6 +132,11 @@ class ShoppingListViewController: BaseViewController {
     // MARK: Setup
     
     private func setup() {
+        navigationController?.navigationBar.isHidden = false
+        navigationController?.navigationBar.tintColor = .shoppingListOrange
+//        navigationController?.configureNavigationColor(.white)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationItem.title = "Список покупок"
         viewModel?.sync()
         setupCollectionView()
         setupDataSource()
@@ -146,8 +151,7 @@ class ShoppingListViewController: BaseViewController {
         collectionView.refreshControl?.tintColor = .shoppingListOrange
         collectionView.refreshControl?.addTarget(self, action: #selector(refreshControlTriggered), for: .valueChanged)
         collectionView.delegate = self
-        let topInset = UIConstants.collectionTopPadding - UIConstants.listInterItemInset
-        collectionView.contentInset = UIEdgeInsets(top: topInset,
+        collectionView.contentInset = UIEdgeInsets(top: UIConstants.listInterItemInset,
                                                    left: 0,
                                                    bottom:  UIConstants.listInterItemInset,
                                                    right: 0)
@@ -174,7 +178,7 @@ class ShoppingListViewController: BaseViewController {
                 }
                 
                 cell.configure(with: shareModel)
-            
+                
                 return cell
             }
             
@@ -299,10 +303,6 @@ extension ShoppingListViewController: SwipeCollectionViewCellDelegate {
         return options
     }
 }
-
-//MARK: Rows drag and drop delegates
-//inspired by https://www.thetopsites.net/article/59699679.shtml and
-// https://www.raywenderlich.com/3121851-drag-and-drop-tutorial-for-ios#c-rate
 
 extension ShoppingListViewController: UICollectionViewDragDelegate {
     func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {

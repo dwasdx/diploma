@@ -15,7 +15,6 @@ extension StoryboardLoadable where Self: UIViewController {
 }
 
 extension UIStoryboard {
-    
     public func instantiate<VC: UIViewController>(_ viewController: VC.Type) -> VC {
         guard let vc = self.instantiateInitialViewController() as? VC else {
             fatalError("Couldn't instantiate \(type(of: VC.self))")

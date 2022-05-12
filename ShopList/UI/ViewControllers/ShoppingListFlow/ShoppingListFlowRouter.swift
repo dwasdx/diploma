@@ -48,7 +48,7 @@ extension ShoppingListFlowRouter: ShoppingListFlowRouting {
             let vc = ShoppingListViewController.initFromItsStoryboard()
             vc.viewModel = ShoppingListViewModel()
             vc.router = self
-            vc.modalPresentationStyle = .fullScreen
+//            vc.modalPresentationStyle = .fullScreen
             
             navigationController.viewControllers.removeAll()
             if navigationController.viewControllers.count == 0 {

@@ -99,7 +99,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3r-Ep-hje" customClass="DesignableView" customModule="ShopList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="64" width="311" height="48"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJK-Ud-WcS" customClass="DesignableView" customModule="ShopList" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJK-Ud-WcS" customClass="DesignableView" customModule="ShopList" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="311" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5W-YD-F36">
@@ -112,7 +112,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="y5W-YD-F36" firstAttribute="leading" secondItem="FJK-Ud-WcS" secondAttribute="leading" id="4FL-Kx-wnX"/>
                                                     <constraint firstItem="y5W-YD-F36" firstAttribute="top" secondItem="FJK-Ud-WcS" secondAttribute="top" id="TRz-TT-5a8"/>

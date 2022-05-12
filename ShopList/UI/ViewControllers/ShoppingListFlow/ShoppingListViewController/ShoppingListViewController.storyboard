@@ -11,9 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Roboto-Medium.ttf">
-            <string>Roboto-Medium</string>
-        </array>
         <array key="Roboto-Regular.ttf">
             <string>Roboto-Regular</string>
         </array>
@@ -43,7 +40,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7p-5R-QPA">
-                                <rect key="frame" x="0.0" y="108" width="414" height="788"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dNq-gS-bLt">
                                     <size key="itemSize" width="128" height="128"/>
@@ -185,13 +182,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rCU-l9-X9i">
                                                     <rect key="frame" x="70" y="15.5" width="300" height="39.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLW-Qg-rA5">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLW-Qg-rA5">
                                                             <rect key="frame" x="0.0" y="0.0" width="44.5" height="21"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                                             <color key="textColor" name="shoppinglist.text.black"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9p-wb-htr">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9p-wb-htr">
                                                             <rect key="frame" x="0.0" y="23" width="34.5" height="16.5"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                             <color key="textColor" name="shoppinglist.text.gray"/>
@@ -355,36 +352,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ek-Yc-MJU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <color key="backgroundColor" name="shoppinglist.orange"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKU-G4-kbG" userLabel="Navigation Bar">
-                                <rect key="frame" x="0.0" y="44" width="414" height="64"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Xk5-6M-iKf">
-                                        <rect key="frame" x="16" y="16" width="382" height="40"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Список покупок" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu2-jD-uFg">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
-                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="fRi-IA-6DH"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" name="shoppinglist.orange"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Xk5-6M-iKf" secondAttribute="trailing" constant="16" id="H6B-iL-i0n"/>
-                                    <constraint firstItem="Xk5-6M-iKf" firstAttribute="leading" secondItem="LKU-G4-kbG" secondAttribute="leading" constant="16" id="XXe-8J-aVG"/>
-                                    <constraint firstAttribute="bottom" secondItem="Xk5-6M-iKf" secondAttribute="bottom" constant="8" id="qMh-98-EW2"/>
-                                    <constraint firstAttribute="height" constant="64" id="qWK-9D-IN5"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNR-tF-4DO" customClass="DesignableButton" customModule="ShopList" customModuleProvider="target">
                                 <rect key="frame" x="324" y="772" width="58" height="58"/>
                                 <color key="backgroundColor" name="shoppinglist.orange"/>
@@ -422,20 +389,13 @@
                         <color key="backgroundColor" name="shoppinglist.background.white"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="R7p-5R-QPA" secondAttribute="bottom" id="0Kg-WP-ZAV"/>
-                            <constraint firstItem="6ek-Yc-MJU" firstAttribute="top" secondItem="R55-WJ-M5h" secondAttribute="top" id="0vL-ED-ZES"/>
                             <constraint firstItem="R7p-5R-QPA" firstAttribute="trailing" secondItem="JbD-4I-kya" secondAttribute="trailing" id="9o6-dc-iMy"/>
                             <constraint firstItem="JbD-4I-kya" firstAttribute="trailing" secondItem="1C5-5L-LqI" secondAttribute="trailing" id="DBm-tO-KpR"/>
                             <constraint firstItem="JbD-4I-kya" firstAttribute="trailing" secondItem="rNR-tF-4DO" secondAttribute="trailing" constant="32" id="Hod-aH-mvh"/>
-                            <constraint firstItem="LKU-G4-kbG" firstAttribute="trailing" secondItem="JbD-4I-kya" secondAttribute="trailing" id="MVh-h1-NXb"/>
-                            <constraint firstItem="JbD-4I-kya" firstAttribute="top" secondItem="6ek-Yc-MJU" secondAttribute="bottom" id="NXb-mg-z1e"/>
-                            <constraint firstItem="LKU-G4-kbG" firstAttribute="leading" secondItem="JbD-4I-kya" secondAttribute="leading" id="S4g-P5-uPS"/>
-                            <constraint firstItem="6ek-Yc-MJU" firstAttribute="leading" secondItem="JbD-4I-kya" secondAttribute="leading" id="T8r-K3-e0o"/>
-                            <constraint firstItem="R7p-5R-QPA" firstAttribute="top" secondItem="LKU-G4-kbG" secondAttribute="bottom" id="TD2-Os-bkX"/>
-                            <constraint firstItem="6ek-Yc-MJU" firstAttribute="trailing" secondItem="JbD-4I-kya" secondAttribute="trailing" id="Ztb-Pg-CzM"/>
+                            <constraint firstItem="R7p-5R-QPA" firstAttribute="top" secondItem="JbD-4I-kya" secondAttribute="top" id="d4i-8t-Np9"/>
                             <constraint firstItem="1C5-5L-LqI" firstAttribute="top" secondItem="R55-WJ-M5h" secondAttribute="top" id="iU7-D8-bMQ"/>
                             <constraint firstItem="1C5-5L-LqI" firstAttribute="leading" secondItem="JbD-4I-kya" secondAttribute="leading" id="kMU-hW-har"/>
                             <constraint firstAttribute="bottom" secondItem="1C5-5L-LqI" secondAttribute="bottom" id="oJF-3A-MeK"/>
-                            <constraint firstItem="LKU-G4-kbG" firstAttribute="top" secondItem="JbD-4I-kya" secondAttribute="top" id="p0X-aQ-lbU"/>
                             <constraint firstItem="JbD-4I-kya" firstAttribute="bottom" secondItem="rNR-tF-4DO" secondAttribute="bottom" constant="32" id="qXo-ZN-Erf"/>
                             <constraint firstItem="R7p-5R-QPA" firstAttribute="leading" secondItem="JbD-4I-kya" secondAttribute="leading" id="rwA-7y-Csq"/>
                         </constraints>

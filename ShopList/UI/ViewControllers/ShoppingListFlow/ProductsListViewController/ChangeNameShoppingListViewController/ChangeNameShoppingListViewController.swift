@@ -122,7 +122,7 @@ extension ChangeNameShoppingListViewController {
         
     }
     
-    @IBAction func backgroundTapped(_ sender: Any) {
+    @IBAction func backgroundTapped() {
         dismiss {
             self.router?.navigateBack(animated: false, nil)
         }

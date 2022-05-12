@@ -10,6 +10,26 @@ import UIKit
 
 protocol IFlowRouterType {}
 
+enum ListActionTittle {
+    case share
+    case rename
+    case addToShoppingList
+    case addParticipant
+    
+    var description: String {
+        switch self {
+        case .addToShoppingList:
+            return "Добавить в список покупок"
+        case .rename:
+            return "Переименовать список"
+        case .share:
+            return "Поделиться списком"
+        case .addParticipant:
+            return "Добавить участников"
+        }
+    }
+}
+
 
 class ProductsListFlowRouter<T: BaseRouter>: BaseRouter  {
     let parentRouter: T
@@ -53,33 +73,42 @@ extension ProductsListFlowRouter: ProductsListViewControllerRouting {
         initialViewController.present(vc, animated: false, completion: completion)
     }
     
-    func presentUncheckAllViewController(productsListViewModel: ProductsListViewModeling, _ completion: (() -> Void)?) {
-        let vc = UncheckAllViewController.initFromItsStoryboard()
-        vc.router = self
-        vc.viewModel = UncheckAllViewModel(parentViewModel: productsListViewModel)
-        vc.modalPresentationStyle = .custom
-        vc.modalTransitionStyle = .crossDissolve
-        initialViewController.present(vc, animated: true, completion: completion)
+    func presentUncheckAllViewController(confirmHandler: (() -> Void)?, _ completion: (() -> Void)?) {
+        let ac = UIAlertController(title: "Внимание",
+                                   message: "Вы хотите достать все товары из корзины?",
+                                   preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler: nil))
+        ac.addAction(UIAlertAction(title: "Достать",
+                                   style: .destructive,
+                                   handler: { _ in
+            confirmHandler?()
+        }))
+        initialViewController.present(ac, animated: true, completion: completion)
     }
     
     func presentListActionsViewController(productsListViewModel: ProductsListViewModeling, _ completion: (() -> Void)?) {
-        let actions: Actions = [
-            ListActionsModel(title: ListActionTittle.rename.description, image: UIImage.ActionViewControllerIcons.rename),
-            ListActionsModel(title: ListActionTittle.addParticipant.description, image: UIImage.ActionViewControllerIcons.addParticipant),
-            ListActionsModel(title: ListActionTittle.share.description, image: UIImage.ActionViewControllerIcons.share)
-        ]
-        let vc = ListActtionsViewController.initFromItsStoryboard()
-        vc.router = self
-        vc.viewModel = ListActionsViewModel(actions: actions, productListViewModel: productsListViewModel)
-        vc.modalPresentationStyle = .custom
-        initialViewController.present(vc, animated: false, completion: completion)
+        let ac = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        ac.view.tintColor = .shoppingListBlue
+        ac.addAction(UIAlertAction(title: ListActionTittle.rename.description,
+                                   style: .default,
+                                   handler: { _ in
+            self.presentChangeNameListViewController(productsListViewModel: productsListViewModel, nil)
+        }))
+        ac.addAction(UIAlertAction(title: ListActionTittle.addParticipant.description,
+                                   style: .default,
+                                   handler: { _ in
+            self.presenListMembersViewController(listId: productsListViewModel.listId, nil)
+        }))
+        ac.addAction(UIAlertAction(title: ListActionTittle.share.description, style: .default, handler: { _ in
+            self.presentShareViewController(nil)
+        }))
+        ac.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler: nil))
+        initialViewController.present(ac, animated: true, completion: completion)
     }
     
 }
 
 extension ProductsListFlowRouter: DeleteProductConfirmationViewControllerRouting {
-
-    
     func presentProductsListViewController(_ completion: (() -> Void)?) {
         if let vc = initialViewController.presentedViewController {
             vc.dismiss(animated: true, completion: completion)
@@ -93,10 +122,6 @@ extension ProductsListFlowRouter: AddNewProductViewControllerRouting {
 }
 
 extension ProductsListFlowRouter: ChangeValueViewControllerRouting {
-    
-}
-
-extension ProductsListFlowRouter: UncheckAllRouting {
     
 }
 
@@ -141,7 +166,7 @@ extension ProductsListFlowRouter: ShareAppRouting {
     
 }
 
-extension ProductsListFlowRouter: ListActionsViewControllerRouting {
+extension ProductsListFlowRouter {
     
     func presentChangeNameListViewController(productsListViewModel: ProductsListViewModeling, _ completion: (() -> Void)?) {
         

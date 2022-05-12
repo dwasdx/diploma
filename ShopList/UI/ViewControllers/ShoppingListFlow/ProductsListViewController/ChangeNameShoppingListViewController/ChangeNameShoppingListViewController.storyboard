@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qUb-lV-Ni5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qUb-lV-Ni5">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -21,7 +21,7 @@
         <!--Change Name Shopping List View Controller-->
         <scene sceneID="sIY-Gu-qAI">
             <objects>
-                <viewController id="qUb-lV-Ni5" customClass="ChangeNameShoppingListViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qUb-lV-Ni5" customClass="ChangeNameShoppingListViewController" customModule="ShopList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i5V-v2-gUu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,30 +36,30 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7z-ag-tQ4">
                                 <rect key="frame" x="0.0" y="487" width="375" height="325"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krW-qU-6NT" customClass="DesignableView" customModule="ShoppingList" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krW-qU-6NT" customClass="DesignableView" customModule="ShopList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название списка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkC-UV-sh3">
-                                                <rect key="frame" x="23.999999999999993" y="121.66666666666661" width="97.333333333333314" height="14.333333333333329"/>
+                                                <rect key="frame" x="24.000000000000007" y="121.33333333333337" width="96.666666666666686" height="14"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                 <color key="textColor" name="shoppinglist.text.gray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название списка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ja-pt-Blm">
-                                                <rect key="frame" x="106.66666666666669" y="32" width="162" height="23.666666666666671"/>
+                                                <rect key="frame" x="107" y="32" width="161" height="23.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
                                                 <color key="textColor" name="shoppinglist.text.black"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Lc-8I-YSm" userLabel="LineUnderTextField">
-                                                <rect key="frame" x="24" y="161" width="327" height="1"/>
+                                                <rect key="frame" x="24" y="160" width="327" height="1"/>
                                                 <color key="backgroundColor" name="shoppinglist.icons.gray"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Hbv-li-WDN"/>
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Список покупок " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFR-dY-mFJ">
-                                                <rect key="frame" x="24" y="138" width="327" height="23"/>
+                                                <rect key="frame" x="24" y="137.33333333333337" width="327" height="22.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <connections>
@@ -67,9 +67,9 @@
                                                 </connections>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Dma-0G-Mx8">
-                                                <rect key="frame" x="32" y="229" width="311" height="48"/>
+                                                <rect key="frame" x="32" y="228" width="311" height="48"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfl-wa-8hg" customClass="DesignableButton" customModule="ShoppingList" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfl-wa-8hg" customClass="DesignableButton" customModule="ShopList" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="143.66666666666666" height="48"/>
                                                         <color key="backgroundColor" name="shoppinglist.orange"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
@@ -98,7 +98,7 @@
                                                             <action selector="saveButtonTapped" destination="qUb-lV-Ni5" eventType="touchUpInside" id="36y-8Y-HRy"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc3-TS-r0T" customClass="DesignableButton" customModule="ShoppingList" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc3-TS-r0T" customClass="DesignableButton" customModule="ShopList" customModuleProvider="target">
                                                         <rect key="frame" x="167.66666666666663" y="0.0" width="143.33333333333337" height="48"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
@@ -198,7 +198,7 @@
                 </viewController>
                 <tapGestureRecognizer id="B4b-mO-dUl">
                     <connections>
-                        <action selector="backgorundTapped:" destination="qUb-lV-Ni5" id="CgV-tY-KYp"/>
+                        <action selector="backgroundTapped" destination="qUb-lV-Ni5" id="bdK-o2-8z8"/>
                     </connections>
                 </tapGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="dOY-JZ-2Is">
@@ -214,7 +214,7 @@
     </scenes>
     <designables>
         <designable name="Gfl-wa-8hg">
-            <size key="intrinsicContentSize" width="80" height="31"/>
+            <size key="intrinsicContentSize" width="82" height="31"/>
         </designable>
         <designable name="uc3-TS-r0T">
             <size key="intrinsicContentSize" width="57" height="31"/>

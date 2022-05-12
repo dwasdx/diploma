@@ -23,8 +23,6 @@ public class BaseRouter {
         let nvc = UINavigationController()
         nvc.navigationBar.isHidden = true
         nvc.modalPresentationStyle = .fullScreen
-        //disable pop swipe from left to right
-        nvc.interactivePopGestureRecognizer?.isEnabled = false
         
         self.navigationController = nvc
     }

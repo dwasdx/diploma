@@ -7,7 +7,7 @@ protocol ProductsListViewControllerRouting {
     func presentAddNewProductViewController(_ completion: (() -> Void)?)
     func presentConfirmDeleteViewController(with model: ProductModel, onIndexPath indexPath: IndexPath, _ completion: (() -> Void)?)
     func presentChangeValueViewController(indexPath: IndexPath, _ completion: (() -> Void)?)
-    func presentUncheckAllViewController(productsListViewModel: ProductsListViewModeling, _ completion: (() -> Void)?)
+    func presentUncheckAllViewController(confirmHandler: (() -> Void)?, _ completion: (() -> Void)?)
     func presentListActionsViewController(productsListViewModel: ProductsListViewModeling, _ completion: (() -> Void)?)
     func navigateBack(animated: Bool, _ completion: (() -> Void)?)
 }
@@ -55,12 +55,9 @@ class ProductsListViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var backgroundViewNoItems: UIView!
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var containerProgressView: UIView!
-    @IBOutlet weak var navigationItemLabel: UILabel!
-    @IBOutlet weak var plusPersonNavigationButton: UIButton!
     
     lazy var initialCellXCoordinate: CGFloat = tableView.center.x
     var currentCellOffset: CGFloat = 0
@@ -129,9 +126,6 @@ class ProductsListViewController: BaseViewController {
     
     private func setup() {
         viewModel?.sync()
-        navigationController?.navigationBar.isHidden = true
-        navigationItemLabel.text = viewModel.listTitle
-        backgroundViewNoItems.isHidden = !viewModel.isEmptyModel
         backgroundView.isHidden = !viewModel.isEmptyModel
         viewModel.dropBadge()
         setupTableView()
@@ -141,9 +135,24 @@ class ProductsListViewController: BaseViewController {
     
     private func setupNavigationBar() {
         let isListOwner = viewModel.currentUserIsListOwner
-        plusPersonNavigationButton.backgroundColor = .shoppingListWhite
-        let image = isListOwner ? UIImage(named: "three-dots") : UIImage(named: "share-arrow")
-        plusPersonNavigationButton.setImage(image, for: .normal)
+        let item: UIBarButtonItem
+        if isListOwner {
+            item = UIBarButtonItem(image: UIImage(named: "three-dots")?.withRenderingMode(.alwaysTemplate),
+                                   style: .plain,
+                                   target: self,
+                                   action: #selector(navigationBarButtonPressed))
+        } else {
+            item = UIBarButtonItem(image: UIImage(named: "share-arrow")?.withRenderingMode(.alwaysTemplate),
+                                   style: .plain,
+                                   target: self,
+                                   action: #selector(navigationBarButtonPressed))
+        }
+        navigationController?.navigationBar.isHidden = false
+        navigationItem.setRightBarButton(item, animated: false)
+        navigationItem.setHidesBackButton(false, animated: false)
+        navigationItem.backBarButtonItem?.tintColor = .shoppingListOrange
+        item.tintColor = .shoppingListOrange
+        navigationItem.title = viewModel.listTitle
     }
     
     
@@ -210,7 +219,7 @@ class ProductsListViewController: BaseViewController {
         guard isViewLoaded else {
             return
         }
-        navigationItemLabel.text = viewModel.listTitle
+        navigationItem.title = viewModel.listTitle
         updateBackgroundView()
         updateProgressView(animate: animatingDifferences)
         updateTableView(animatingDifferences: animatingDifferences, withScroll: withScroll)
@@ -219,7 +228,6 @@ class ProductsListViewController: BaseViewController {
     
     
     func updateBackgroundView() {
-        backgroundViewNoItems.isHidden = !viewModel.isEmptyModel
         backgroundView.isHidden = !viewModel.isEmptyModel
     }
     
@@ -284,7 +292,7 @@ extension ProductsListViewController {
     }
     
     @objc private func reuseButtonTapped() {
-        router?.presentUncheckAllViewController(productsListViewModel: viewModel, nil)
+        router?.presentUncheckAllViewController(confirmHandler: viewModel.uncheckAllProducts, nil)
     }
     
     @IBAction func plusButtonTapped() {
@@ -297,7 +305,7 @@ extension ProductsListViewController {
         router?.presentAddNewProductViewController(nil)
     }
     
-    @IBAction func navigationBarButtonPressed() {
+    @objc func navigationBarButtonPressed() {
         if viewModel.currentUserIsListOwner {
             router?.presentListActionsViewController(productsListViewModel: viewModel, nil)
         } else {
