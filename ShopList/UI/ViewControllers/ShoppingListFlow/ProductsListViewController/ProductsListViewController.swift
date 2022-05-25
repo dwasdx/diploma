@@ -152,6 +152,7 @@ class ProductsListViewController: BaseViewController {
         navigationItem.setHidesBackButton(false, animated: false)
         navigationItem.backBarButtonItem?.tintColor = .shoppingListOrange
         item.tintColor = .shoppingListOrange
+        navigationItem.backButtonTitle = "Назад"
         navigationItem.title = viewModel.listTitle
     }
     

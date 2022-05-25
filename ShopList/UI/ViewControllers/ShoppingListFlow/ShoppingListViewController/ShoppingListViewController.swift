@@ -136,6 +136,7 @@ class ShoppingListViewController: BaseViewController {
         navigationController?.navigationBar.tintColor = .shoppingListOrange
 //        navigationController?.configureNavigationColor(.white)
         navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationItem.backButtonTitle = "Назад"
         navigationItem.title = "Список покупок"
         viewModel?.sync()
         setupCollectionView()

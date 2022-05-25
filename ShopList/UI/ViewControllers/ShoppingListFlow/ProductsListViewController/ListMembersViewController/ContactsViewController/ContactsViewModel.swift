@@ -145,6 +145,8 @@ extension ContactsViewModel: ContactsViewModeling {
         }
         if !contact.isInApp {
             completion()
+        } else {
+            createNewUser(indexPath: indexPath)
         }
     }
     

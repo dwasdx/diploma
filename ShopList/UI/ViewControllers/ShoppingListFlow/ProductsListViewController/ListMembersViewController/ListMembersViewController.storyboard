@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FN2-Oz-nCp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FN2-Oz-nCp">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Roboto-Medium.ttf">
-            <string>Roboto-Medium</string>
-        </array>
         <array key="Roboto-Regular.ttf">
             <string>Roboto-Regular</string>
         </array>
@@ -21,114 +17,19 @@
         <!--List Members View Controller-->
         <scene sceneID="1Ea-B8-1Az">
             <objects>
-                <viewController id="FN2-Oz-nCp" customClass="ListMembersViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FN2-Oz-nCp" customClass="ListMembersViewController" customModule="ShopList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgC-Q5-Hc6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNk-JC-M8r" userLabel="Backround View No Items">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.empty.list.members.image" translatesAutoresizingMaskIntoConstraints="NO" id="SxX-oH-csY">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" name="shoppinglist.background.white"/>
-                                <constraints>
-                                    <constraint firstItem="SxX-oH-csY" firstAttribute="leading" secondItem="iNk-JC-M8r" secondAttribute="leading" id="LEZ-sO-FeQ"/>
-                                    <constraint firstItem="SxX-oH-csY" firstAttribute="top" secondItem="iNk-JC-M8r" secondAttribute="top" id="PqP-xr-Qg2"/>
-                                    <constraint firstAttribute="trailing" secondItem="SxX-oH-csY" secondAttribute="trailing" id="i8r-0d-W7b"/>
-                                    <constraint firstAttribute="bottom" secondItem="SxX-oH-csY" secondAttribute="bottom" id="uIL-OM-fcb"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPd-nH-lLy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <color key="backgroundColor" name="shoppinglist.orange"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9EY-Bj-Mq5" userLabel="Navigation Bar">
-                                <rect key="frame" x="0.0" y="44" width="375" height="64"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="As2-kj-csf">
-                                        <rect key="frame" x="16" y="16" width="343" height="40"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd6-4Q-3Z9" customClass="DesignableButton" customModule="ShoppingList" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                                <color key="backgroundColor" name="shoppinglist.background.grey"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="peL-4W-u3i"/>
-                                                </constraints>
-                                                <state key="normal" image="arrow-left"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
-                                                        <point key="value" x="0.0" y="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                        <color key="value" name="shoppinglist.navbar.shadow.grey"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="backButtonTapped" destination="FN2-Oz-nCp" eventType="touchUpInside" id="GbX-QB-ItB"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Участники" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR2-EG-kwB">
-                                                <rect key="frame" x="73" y="0.0" width="197" height="40"/>
-                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap0-Iq-hgI" customClass="DesignableButton" customModule="ShoppingList" customModuleProvider="target">
-                                                <rect key="frame" x="303" y="0.0" width="40" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="07w-bf-Oxg"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                        <real key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
-                                                        <point key="value" x="0.0" y="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Y7T-ZX-4zH"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" name="shoppinglist.orange"/>
-                                <constraints>
-                                    <constraint firstItem="As2-kj-csf" firstAttribute="leading" secondItem="9EY-Bj-Mq5" secondAttribute="leading" constant="16" id="1Vs-R8-fbc"/>
-                                    <constraint firstAttribute="height" constant="64" id="783-HB-0bd"/>
-                                    <constraint firstAttribute="trailing" secondItem="As2-kj-csf" secondAttribute="trailing" constant="16" id="YPs-ws-yHO"/>
-                                    <constraint firstAttribute="bottom" secondItem="As2-kj-csf" secondAttribute="bottom" constant="8" id="tq0-EM-rwa"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="81" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4bz-Et-jbK">
-                                <rect key="frame" x="0.0" y="108" width="375" height="704"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="7Zx-bO-Gaj" userLabel="Plus Container View" customClass="DesignableView" customModule="ShoppingList" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="129.66666828502309" width="375" height="98"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="7Zx-bO-Gaj" userLabel="Plus Container View" customClass="DesignableView" customModule="ShopList" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="148.33333206176758" width="375" height="98"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOC-i2-9sy" customClass="DesignableButton" customModule="ShoppingList" customModuleProvider="target">
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOC-i2-9sy" customClass="DesignableButton" customModule="ShopList" customModuleProvider="target">
                                             <rect key="frame" x="285" y="40" width="58" height="58"/>
                                             <color key="backgroundColor" name="shoppinglist.border.yellow"/>
                                             <constraints>
@@ -168,14 +69,14 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListMembersTableViewCell" id="jdx-gf-nBJ" customClass="ListMembersTableViewCell" customModule="ShoppingList" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="81"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListMembersTableViewCell" id="jdx-gf-nBJ" customClass="ListMembersTableViewCell" customModule="ShopList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jdx-gf-nBJ" id="HuH-GE-Xor">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6c-J7-P3m" userLabel="Destructive View" customClass="DesignableView" customModule="ShoppingList" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6c-J7-P3m" userLabel="Destructive View" customClass="DesignableView" customModule="ShopList" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="0.0" width="343" height="70"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXe-Yk-jPP">
@@ -201,7 +102,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qU2-Et-IOe" userLabel="Container View" customClass="DesignableView" customModule="ShoppingList" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qU2-Et-IOe" userLabel="Container View" customClass="DesignableView" customModule="ShopList" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="0.0" width="343" height="70"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RF-LN-H44">
@@ -210,7 +111,7 @@
                                                             <color key="textColor" name="shoppinglist.text.black"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLK-AN-9Ez" userLabel="Avatar View" customClass="DesignableView" customModule="ShoppingList" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLK-AN-9Ez" userLabel="Avatar View" customClass="DesignableView" customModule="ShopList" customModuleProvider="target">
                                                             <rect key="frame" x="12" y="12" width="46" height="46"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VVg-UF-b9a">
@@ -323,87 +224,17 @@
                                     <outlet property="delegate" destination="FN2-Oz-nCp" id="3md-Hm-JPO"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taD-dY-UlN">
-                                <rect key="frame" x="32.666666666666657" y="356" width="310" height="250"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.user" translatesAutoresizingMaskIntoConstraints="NO" id="aVH-De-WMG">
-                                        <rect key="frame" x="114" y="21.666666666666686" width="82" height="67"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="У вас еще нет участников (" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dr0-Lh-Wco">
-                                        <rect key="frame" x="41" y="117.66666666666669" width="228" height="21"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69y-Nc-T8Q" userLabel="Yellow Line" customClass="DesignableView" customModule="ShoppingList" customModuleProvider="target">
-                                        <rect key="frame" x="133.33333333333334" y="151.66666666666669" width="43" height="2"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="43" id="4ko-Jg-Ll0"/>
-                                            <constraint firstAttribute="height" constant="2" id="g5i-0G-v8u"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" name="shoppinglist.border.yellow"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавьте первого участника )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq2-eT-uz3">
-                                        <rect key="frame" x="42" y="161.66666666666663" width="226" height="18.666666666666657"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
-                                        <color key="textColor" name="shoppinglist.text.gray"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="gq2-eT-uz3" firstAttribute="centerX" secondItem="taD-dY-UlN" secondAttribute="centerX" id="05N-GH-fDG"/>
-                                    <constraint firstItem="dr0-Lh-Wco" firstAttribute="top" secondItem="aVH-De-WMG" secondAttribute="bottom" constant="29" id="Kbl-Dv-it0"/>
-                                    <constraint firstItem="69y-Nc-T8Q" firstAttribute="top" secondItem="dr0-Lh-Wco" secondAttribute="bottom" constant="13" id="LCf-PY-JF9"/>
-                                    <constraint firstItem="gq2-eT-uz3" firstAttribute="top" secondItem="69y-Nc-T8Q" secondAttribute="bottom" constant="8" id="Pnp-LO-GUu"/>
-                                    <constraint firstItem="aVH-De-WMG" firstAttribute="centerY" secondItem="taD-dY-UlN" secondAttribute="centerY" constant="-70" id="UGO-T9-NW6"/>
-                                    <constraint firstItem="dr0-Lh-Wco" firstAttribute="centerX" secondItem="taD-dY-UlN" secondAttribute="centerX" id="cjM-Vs-Un9"/>
-                                    <constraint firstAttribute="width" constant="310" id="jZI-si-hMx"/>
-                                    <constraint firstAttribute="height" constant="250" id="mam-eu-jpc"/>
-                                    <constraint firstItem="69y-Nc-T8Q" firstAttribute="centerX" secondItem="taD-dY-UlN" secondAttribute="centerX" id="uJ7-rP-3ZB"/>
-                                    <constraint firstItem="aVH-De-WMG" firstAttribute="centerX" secondItem="taD-dY-UlN" secondAttribute="centerX" id="yDx-G5-xBc"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="NoN-cO-WXj" appends="YES" id="uqk-4I-Yow"/>
-                                </connections>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tYi-Er-vls"/>
                         <color key="backgroundColor" name="shoppinglist.background.white"/>
                         <constraints>
-                            <constraint firstItem="taD-dY-UlN" firstAttribute="centerX" secondItem="tYi-Er-vls" secondAttribute="centerX" id="1nI-Ig-46Y"/>
                             <constraint firstItem="4bz-Et-jbK" firstAttribute="trailing" secondItem="tYi-Er-vls" secondAttribute="trailing" id="3hb-Nw-Af9"/>
-                            <constraint firstItem="9EY-Bj-Mq5" firstAttribute="top" secondItem="tYi-Er-vls" secondAttribute="top" id="6O5-Fu-cCM"/>
-                            <constraint firstItem="4bz-Et-jbK" firstAttribute="top" secondItem="9EY-Bj-Mq5" secondAttribute="bottom" id="AWX-YB-GRx"/>
-                            <constraint firstAttribute="bottom" secondItem="iNk-JC-M8r" secondAttribute="bottom" id="F14-n6-GEN"/>
-                            <constraint firstItem="qPd-nH-lLy" firstAttribute="leading" secondItem="tYi-Er-vls" secondAttribute="leading" id="L6E-FB-z6H"/>
-                            <constraint firstItem="iNk-JC-M8r" firstAttribute="top" secondItem="xgC-Q5-Hc6" secondAttribute="top" id="LsJ-IX-uuL"/>
-                            <constraint firstItem="qPd-nH-lLy" firstAttribute="top" secondItem="xgC-Q5-Hc6" secondAttribute="top" id="NjE-Cm-Xsv"/>
-                            <constraint firstItem="taD-dY-UlN" firstAttribute="centerY" secondItem="tYi-Er-vls" secondAttribute="centerY" constant="70" id="Pxn-pB-xkj"/>
-                            <constraint firstItem="tYi-Er-vls" firstAttribute="trailing" secondItem="9EY-Bj-Mq5" secondAttribute="trailing" id="UMZ-Kf-dwz"/>
-                            <constraint firstItem="tYi-Er-vls" firstAttribute="trailing" secondItem="qPd-nH-lLy" secondAttribute="trailing" id="UcX-Q1-SLA"/>
-                            <constraint firstItem="iNk-JC-M8r" firstAttribute="leading" secondItem="tYi-Er-vls" secondAttribute="leading" id="V8G-lD-3nn"/>
+                            <constraint firstItem="4bz-Et-jbK" firstAttribute="top" secondItem="tYi-Er-vls" secondAttribute="top" id="Hk4-jw-6LL"/>
                             <constraint firstItem="4bz-Et-jbK" firstAttribute="leading" secondItem="tYi-Er-vls" secondAttribute="leading" id="jNG-t5-TDZ"/>
-                            <constraint firstItem="tYi-Er-vls" firstAttribute="top" secondItem="qPd-nH-lLy" secondAttribute="bottom" id="kLc-Qx-w0O"/>
                             <constraint firstAttribute="bottom" secondItem="4bz-Et-jbK" secondAttribute="bottom" id="kqn-JT-w6s"/>
-                            <constraint firstItem="9EY-Bj-Mq5" firstAttribute="leading" secondItem="tYi-Er-vls" secondAttribute="leading" id="pM3-BJ-pPX"/>
-                            <constraint firstItem="tYi-Er-vls" firstAttribute="trailing" secondItem="iNk-JC-M8r" secondAttribute="trailing" id="rTa-Et-0yN"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="iNk-JC-M8r" id="OUg-Ub-Fej"/>
-                        <outlet property="backgroundViewNoItems" destination="taD-dY-UlN" id="NDC-qs-LLC"/>
                         <outlet property="tableView" destination="4bz-Et-jbK" id="rJX-Zs-FVR"/>
                     </connections>
                 </viewController>
@@ -418,25 +249,13 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="Ap0-Iq-hgI">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
         <designable name="EOC-i2-9sy">
             <size key="intrinsicContentSize" width="32" height="32"/>
         </designable>
-        <designable name="Sd6-4Q-3Z9">
-            <size key="intrinsicContentSize" width="24" height="24"/>
-        </designable>
     </designables>
     <resources>
-        <image name="arrow-left" width="24" height="24"/>
-        <image name="background.empty.list.members.image" width="375" height="812"/>
-        <image name="empty.user" width="82" height="67"/>
         <image name="footerview.plusbutton.plus" width="32" height="32"/>
         <image name="tablecell.trash.icon" width="24" height="24"/>
-        <namedColor name="shoppinglist.background.grey">
-            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="shoppinglist.background.white">
             <color red="1" green="0.99599999189376831" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -452,12 +271,6 @@
         <namedColor name="shoppinglist.icons.gray">
             <color red="0.75300002098083496" green="0.75300002098083496" blue="0.75300002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="shoppinglist.navbar.shadow.grey">
-            <color red="0.097999997437000275" green="0.082000002264976501" blue="0.25499999523162842" alpha="0.070000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="shoppinglist.orange">
-            <color red="1" green="0.70200002193450928" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="shoppinglist.shadow.grey">
             <color red="0.071000002324581146" green="0.059000000357627869" blue="0.19599999487400055" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -467,14 +280,8 @@
         <namedColor name="shoppinglist.text.black">
             <color red="0.054999999701976776" green="0.039000000804662704" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="shoppinglist.text.gray">
-            <color red="0.59200000762939453" green="0.60799998044967651" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="shoppinglist.user.icon.yellow">
             <color red="0.95686274509803926" green="0.76470588235294112" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

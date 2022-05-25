@@ -31,8 +31,6 @@ class ListMembersViewController: BaseViewController {
     var currentCellOffset: CGFloat = 0
     var startingPoint = CGPoint.zero
     
-    @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var backgroundViewNoItems: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     private var dataSource: MembersDataSource!
@@ -69,6 +67,8 @@ class ListMembersViewController: BaseViewController {
     }
     
     private func setup() {
+        navigationItem.title = "Участники списка"
+        navigationItem.backButtonTitle = "Назад"
         setupTableView()
         setupDataSource()
     }
@@ -99,14 +99,8 @@ class ListMembersViewController: BaseViewController {
         guard isViewLoaded else {
             return
         }
-        updateBackgroundView()
         updateRefreshControl()
         createSnapshot()
-    }
-    
-    private func updateBackgroundView() {
-        backgroundView.isHidden = !(viewModel?.isEmptyModel ?? true)
-        backgroundViewNoItems.isHidden = !(viewModel?.isEmptyModel ?? true)
     }
     
     private func updateRefreshControl() {

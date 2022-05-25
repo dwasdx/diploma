@@ -17,7 +17,7 @@ struct ItemObject: Codable {
         self.value = entity.value
         self.is_marked = entity.isMarked
         self.user_marked = entity.userMarkedId
-        self.list_id = entity.listId
+        self.list_id = entity.listId.lowercased()
         self.created_at = Int(entity.createdAt)
         self.updated_at = Int(entity.updatedAt)
         self.is_deleted = entity.isdeleted

@@ -24,7 +24,6 @@ class UserProfileViewController: BaseViewController {
     
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var phoneNumerLabel: UILabel!
-    @IBOutlet weak var ratingStackView: RatingController!
     
     //MARK: General
     
@@ -47,8 +46,8 @@ class UserProfileViewController: BaseViewController {
     }
     
     override func viewDidLoad() {
+        setupNavBar()
         update()
-        ratingStackView.delegate = self
     }
     
     var router: UserProfileViewControllerRouting?
@@ -72,6 +71,22 @@ class UserProfileViewController: BaseViewController {
         }
     }
     
+    private func setup() {
+        setupNavBar()
+    }
+    
+    private func setupNavBar() {
+        navigationController?.navigationBar.isHidden = false
+        navigationItem.title = "Профиль"
+        let item = UIBarButtonItem(image: UIImage(named: "log-in"),
+                                   style: .plain,
+                                   target: self,
+                                   action: #selector(logOutTapped))
+        navigationItem.setRightBarButton(item, animated: false)
+        navigationController?.configureNavigationColor(.white)
+        item.tintColor = .shoppingListOrange
+    }
+    
     //MARK: Updates
     
     private func update() {
@@ -79,13 +94,8 @@ class UserProfileViewController: BaseViewController {
             return
         }
         
-        updateRatingStackView()
         updateUserName()
         updatePhoneNumber()
-    }
-    
-    private func updateRatingStackView() {
-        ratingStackView.starsRating = viewModel?.currentRating ?? 0
     }
     
     private func updateUserName() {
@@ -102,7 +112,7 @@ class UserProfileViewController: BaseViewController {
         router?.presentChangeNameViewController(nil)
     }
     
-    @IBAction func logOutTapped() {
+    @objc func logOutTapped() {
         router?.presentConfirmLogOutViewController(nil)
     }
     

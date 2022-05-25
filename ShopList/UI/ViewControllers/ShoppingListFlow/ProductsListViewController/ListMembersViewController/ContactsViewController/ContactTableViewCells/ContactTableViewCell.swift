@@ -15,16 +15,17 @@ class ContactTableViewCell: UITableViewCell {
     func configure(_ model: ListMemberModel) {
         
         switch model.status {
-            case .member, .invited:
-                avatarBackgroundView.backgroundColor = .shoppingListOrange
-                nameLabel.textColor = .shoppingListTextGray
-                background.backgroundColor = .shoppingListShadowGrayRegular
-                addButton.isHidden = true
+        case .member, .invited:
+            avatarBackgroundView.backgroundColor = .shoppingListOrange
+            nameLabel.textColor = .shoppingListTextGray
+            background.backgroundColor = .shoppingListShadowGrayRegular
+            addButton.isHidden = true
             
-            case .notInvited, .refused:
-                addButton.isHidden = false
-                nameLabel.textColor = .shoppingListTextBlack
-                avatarBackgroundView.backgroundColor = .shoppingListBlue
+        case .notInvited, .refused:
+            addButton.isHidden = false
+            nameLabel.textColor = .shoppingListTextBlack
+            avatarBackgroundView.backgroundColor = .shoppingListBlue
+            background.backgroundColor = .white
         }
         phoneNumberLabel.text = model.phoneNumber
         nameLabel.text = model.name

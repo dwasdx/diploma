@@ -88,6 +88,7 @@ class ContactsViewController: BaseViewController {
     
     private func setupTableView() {
         tableView.register(ContactTableViewHeaderView.self, forHeaderFooterViewReuseIdentifier: ContactTableViewHeaderView.reuseIdentifier)
+        tableView.delegate = self
     }
     
     private func setupDataSource() {
@@ -95,6 +96,7 @@ class ContactsViewController: BaseViewController {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ContactTableViewCell.reuseIdentifier, for: indexPath) as? ContactTableViewCell else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = .none
             cell.configure(model)
             
             return cell
@@ -117,11 +119,8 @@ class ContactsViewController: BaseViewController {
         dataSource.apply(snapshot)
     }
     
-    @IBAction func backButtonTapped() {
-        router?.navigateBack(animated: true, nil)
-    }
-    
     @IBAction func addMemberButtonTapped(_ sender: UIButton) {
+//        return
         guard let cell = sender.superview?.superview?.superview as? ContactTableViewCell else {
             return
         }
@@ -143,6 +142,7 @@ class ContactsViewController: BaseViewController {
 }
 
 extension ContactsViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: ContactTableViewHeaderView.reuseIdentifier) as? ContactTableViewHeaderView else {
             return nil
